@@ -194,7 +194,7 @@ async def _(event):
     x = await event.eor("Ping !")
     end = round((time.time() - start) * 1000)
     uptime = time_formatter((time.time() - start_time) * 1000)
-    await x.edit(f"🌹 Pong !! {end}ms\n⏰ Uptime - {uptime}\n♨️ Owner - {first_name}")
+    await x.edit(f"🌹 Pong !! {end}ms\n⏰ Uptime - {uptime}\n♨️ Owner - {user.first_name}")
 
 @ultroid_cmd(
     pattern="cmds$",
