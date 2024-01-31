@@ -77,14 +77,14 @@ buttons = [
 
 # Will move to strings
 alive_txt = """
-The Ultroid Userbot
-
-  ◍ Version - {}
-  ◍ Py-Ultroid - {}
-  ◍ Telethon - {}
+⭐ ULTROID USERBOT ⭐
+┏━━━━━━⛧❘༻༺❘⛧━━━━━━┓
+┃ ⛧ Version - {}
+┃ ⛧ Py-Ultroid - {}
+┃ ⛧ Telethon - {}
 """
 
-in_alive = "{}\n\n🌀 <b>Ultroid Version -><b> <code>{}</code>\n🌀 <b>PyUltroid -></b> <code>{}</code>\n🌀 <b>Python -></b> <code>{}</code>\n🌀 <b>Uptime -></b> <code>{}</code>\n🌀 <b>Branch -></b>[ {} ]\n\n• <b>Join @TeamUltroid</b>"
+in_alive = "{}\n\n┃ ⛧ <b>Ultroid Version -><b> <code>{}</code>\n┃ ⛧ <b>PyUltroid -></b> <code>{}</code>\n┃ ⛧ <b>Python -></b> <code>{}</code>\n┃ ⛧ <b>Uptime -></b> <code>{}</code>\n┃ ⛧ <b>Branch -></b>[ {} ]\n\n• <b>Join @TeamUltroid</b>"
 
 
 @callback("alive")
@@ -130,7 +130,7 @@ async def lol(ult):
         )
 
         if _e := udB.get_key("ALIVE_EMOJI"):
-            als = als.replace("🌀", _e)
+            als = als.replace("🌹", _e)
     else:
         parse = "md"
         als = (get_string("alive_1")).format(
@@ -180,7 +180,7 @@ async def lol(ult):
     )
 
 
-@ultroid_cmd(pattern="ping$", chats=[], type=["official", "assistant"])
+@ultroid_cmd(pattern="lping$", chats=[], type=["official", "assistant"])
 async def _(event):
     start = time.time()
     x = await event.eor("Pong !")
@@ -188,6 +188,26 @@ async def _(event):
     uptime = time_formatter((time.time() - start_time) * 1000)
     await x.edit(get_string("ping").format(end, uptime))
 
+@ultroid_cmd(pattern="ping$")
+async def _(ping):
+    uptime = await get_readable_time((time.time() - StartTime))
+    start = datetime.now()
+    x = await edit_or_reply(ping, "**★**")
+    await x.edit("**★★**")
+    await x.edit("**★★★**")
+    await x.edit("**★★★★**")
+    await x.edit("**★★★★★**")
+    end = datetime.now()
+    duration = (end - start).microseconds / 1000
+    user = await ping.client.get_me()
+    await x.edit("🥰")
+    sleep(3)
+    await x.edit(
+        f"**🌹 ULTROID USERBOT  ࿇**\n\n"
+        f"🌹 **𝙿𝙸𝙽𝙶𝙴𝚁 :** `%sms`\n"
+        f"🌹 **𝚄𝙿𝚃𝙸𝙼𝙴 :** `{uptime}` \n"
+        f"🌹 **𝙾𝚆𝙽𝙴𝚁 :** [{user.first_name}](tg://user?id={user.id})༉" % (duration)
+    )
 
 @ultroid_cmd(
     pattern="cmds$",
@@ -272,7 +292,7 @@ async def inline_alive(ult):
     )
 
     if _e := udB.get_key("ALIVE_EMOJI"):
-        als = als.replace("🌀", _e)
+        als = als.replace("🌹", _e)
     builder = ult.builder
     if pic:
         try:
