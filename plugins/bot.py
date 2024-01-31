@@ -190,7 +190,7 @@ async def _(event):
 
 @ultroid_cmd(pattern="ping$")
 async def _(ping):
-    uptime = await get_readable_time((time.time() - StartTime))
+    uptime = await time_formatter((time.time() - StartTime))
     start = datetime.now()
     x = await edit_or_reply(ping, "**★**")
     await x.edit("**★★**")
