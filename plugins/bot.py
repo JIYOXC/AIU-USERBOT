@@ -188,25 +188,6 @@ async def _(event):
     uptime = time_formatter((time.time() - start_time) * 1000)
     await x.edit(get_string("ping").format(end, uptime))
 
-@ultroid_cmd(pattern="lping$", chats=[], type=["official", "assistant"])
-async def _(event):
-    start = time.time()
-    x = await event.eor("Pong, "**★**")
-    await x.edit("**★★**")
-    await x.edit("**★★★**")
-    await x.edit("**★★★★**")
-    await x.edit("**★★★★★**")
-    end = datetime.now()
-    duration = (end - start).microseconds / 1000
-    await x.edit("🥰")
-    sleep(2)
-    await x.edit(
-        f"**🌹 ULTROID USERBOT  ࿇**\n\n"
-        f"🌹 **𝙿𝙸𝙽𝙶𝙴𝚁 :** `%sms`\n"
-        f"🌹 **𝚄𝙿𝚃𝙸𝙼𝙴 :** `{uptime}` \n"
-        f"🌹 **𝙾𝚆𝙽𝙴𝚁 :** [{user.first_name}](tg://user?id={user.id})༉" % (duration)
-    )
-
 @ultroid_cmd(
     pattern="cmds$",
 )
