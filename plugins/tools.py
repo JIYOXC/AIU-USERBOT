@@ -353,7 +353,7 @@ async def lastname(steal):
         user_id = message.sender_id
     else:
         return await steal.eor("`Use this command with reply or give Username/id...`")
-    chat = "@SangMataInfo_bot"
+    chat = "@SangMata_beta_bot"
     id = f"/search_id {user_id}"
     lol = await steal.eor(get_string("com_1"))
     try:
@@ -364,7 +364,7 @@ async def lastname(steal):
                 respond = await conv.get_response()
                 responds = await conv.get_response()
             except YouBlockedUserError:
-                return await lol.edit("Please unblock @sangmatainfo_bot and try again")
+                return await lol.edit("Please unblock @SangMata_beta_bot and try again")
             if (
                 (response and response.text == "No records found")
                 or (respond and respond.text == "No records found")
@@ -386,7 +386,7 @@ async def lastname(steal):
                 [msg.id, responds.id, respond.id, response.id],
             )
     except AsyncTimeout:
-        await lol.edit("Error: @SangMataInfo_bot is not responding!.")
+        await lol.edit("Error: @SangMata_beta_bot is not responding!.")
 
 
 @ultroid_cmd(pattern="webshot( (.*)|$)")
