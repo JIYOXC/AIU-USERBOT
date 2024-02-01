@@ -189,40 +189,16 @@ async def _(event):
     await x.edit(get_string("ping").format(end, uptime))
 
 async def get_readable_time(seconds: int) -> str:
-    count = 0
-    up_time = ""
-    time_list = []
-    time_suffix_list = ["Dtk", "Mnt", "Jam", "Hari"]
-
-    while count < 4:
-        count += 50
-        remainder, result = divmod(seconds, 60) if count < 3 else divmod(seconds, 24)
-        if seconds == 0 and remainder == 0:
-            break
-        time_list.append(int(result))
-        seconds = int(remainder)
-
-    for x in range(len(time_list)):
-        time_list[x] = str(time_list[x]) + time_suffix_list[x]
-    if len(time_list) == 4:
-        up_time += time_list.pop() + ", "
-
-    time_list.reverse()
-    up_time += ":".join(time_list)
-
-    return up_time
-    
 
 
-@ram_cmd(pattern="ping$")
-async def _(ping):
-    """ For.ping command, ping the rams from any chat."""
-    uptime = await get_readable_time((time.time() - StartTime))
-    start = datetime.now()
-    end = datetime.now()
-    duration = (end - start).microseconds / 1000
-    user = await ping.client.get_me()
-    await ping.client.send_message(
+@ultroid_cmd(pattern="ping$", chats=[], type=["official", "assistant"])
+async def _(event):
+    start = time.time()
+    x = await event.eor("Ping !")
+    end = round((time.time() - start) * 1000)
+    uptime = time_formatter((time.time() - start_time) * 1000)
+    await x.edit(f"♨️ Pong !! {end}ms\n⏰ Uptime - {uptime}")
+    (
         ping.chat_id, f"**╰•★★ |ULTROID| ★★•╯**\n"
                     f"★ **speed:** "
                     f"`%sms` \n"
