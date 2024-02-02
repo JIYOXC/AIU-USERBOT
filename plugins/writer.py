@@ -59,7 +59,7 @@ async def f2i(e):
         os.remove(html)
 
 
-@ultroid_cmd(pattern="write( (.*)|$)")
+@ultroid_cmd(pattern="nulis( (.*)|$)")
 async def writer(e):
     if e.reply_to:
         reply = await e.get_reply_message()
@@ -71,7 +71,7 @@ async def writer(e):
     k = await e.eor(get_string("com_1"))
     img = Image.open("resources/extras/template.jpg")
     draw = ImageDraw.Draw(img)
-    font = ImageFont.truetype("resources/fonts/DroidSansMono.ttf", size=36)
+    font = ImageFont.truetype("resources/fonts/assfont.ttf", size=36)
     x, y = 150, 140
     lines = text_set(text)
     line_height = font.getbbox("\n")[3]
