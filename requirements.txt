@@ -6,4 +6,4 @@ python-dotenv
 pyrogram==2.0.106
 pytgcalls
 py-tgcalls==0.9.2
-pillow
+pillow==10.2.0
