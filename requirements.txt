@@ -3,4 +3,7 @@
 https://github.com/New-dev0/Telethon/archive/platy.zip
 python-decouple
 python-dotenv
-pyrogram 
+pyrogram==2.0.106
+pytgcalls
+py-tgcalls==0.9.2
+pillow
