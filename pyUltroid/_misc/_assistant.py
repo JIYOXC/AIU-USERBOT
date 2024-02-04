@@ -32,7 +32,7 @@ IN_BTTS = [
     [
         Button.url(
             "Repository",
-            url="https://github.com/TeamUltroid/Ultroid",
+            url="https://github.com/JIYOXC/Ultroid",
         ),
         Button.url("Support", url="https://t.me/UltroidSupportChat"),
     ]
