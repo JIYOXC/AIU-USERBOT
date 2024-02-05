@@ -28,7 +28,7 @@
 
 
 ♨️ VPS DEPLOY 
-- Get your [Necessary Variables](#Necessary-Variables)
+- Get your [Necessary Variables](https://github.com/JIYOXC/Ultroid/blob/main/.env.sample)
 
 - Clone the repository:    
 • `git clone https://github.com/TeamUltroid/Ultroid`
