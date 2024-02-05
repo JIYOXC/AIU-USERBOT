@@ -184,19 +184,18 @@ async def lol(ult):
 async def _(event):
     start = time.time()
     x = await event.eor("♨️")
-   sleep (1) 
+   sleep(1) 
     x = await event.eor("♨️♨️")
-    sleep (1)
+    sleep(1)
     x = await event.eor("♨️♨️♨️")
-    sleep (1)
+    sleep(1)
     x = await event.eor("♨️♨️♨️♨️")
-    sleep (1)
+    sleep(1)
     x = await event.eor("♨️♨️♨️♨️♨️")
-    sleep (2)
+    sleep(2)
     end = round((time.time() - start) * 1000)
     uptime = time_formatter((time.time() - start_time) * 1000)
     await x.edit(get_string("ping").format(end, uptime))
-😎 𝙾𝚆𝙽𝙴𝚁 :** [{user.first_name}](tg://user?id={user.id})
 
 @ultroid_cmd(
     pattern="cmds$",
