@@ -31,20 +31,33 @@
 - Get your [Necessary Variables](https://github.com/JIYOXC/Ultroid/blob/main/.env.sample)
 
 - Clone the repository:    
-• `git clone https://github.com/JIYOXC/Ultroid`
+
+  • `git clone https://github.com/JIYOXC/Ultroid`
+
 - Go to the cloned folder:    
+
   • `cd Ultroid`
+
 - Create a virtual env:      
+
   • `virtualenv -p /usr/bin/python3 venv`
-`. ./venv/bin/activate`
+    `. ./venv/bin/activate`
+
 - Install the requirements:
+
   • `pip3 install --no-cache-dir -r re*/st*/op*.txt`
 
   • `pip3 install --no-cache-dir  -r requirements.txt`
-- Fill your variables in the env by
-• `nano .env` , If you have finished edit, CTRL S + CTRL X.
 
-• Install screen to keep running your bot when you close the terminal by `SCREEN -S Ultroid`
+- Fill your variables in the env by
+
+  • `nano .env` 
+
+  If you have finished edit, CTRL S + CTRL X.
+
+• Install screen to keep running your bot when you close the terminal by 
+  
+  • `SCREEN -S Ultroid`
 
 • Finally Run the bot:
   
