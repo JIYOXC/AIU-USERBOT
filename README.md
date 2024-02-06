@@ -31,14 +31,14 @@
 - Get your [Necessary Variables](https://github.com/JIYOXC/Ultroid/blob/main/.env.sample)
 
 - Clone the repository:    
-• `git clone https://github.com/TeamUltroid/Ultroid`
+• `git clone https://github.com/JIYOXC/Ultroid`
 - Go to the cloned folder:    
   • `cd Ultroid`
 - Create a virtual env:      
   • `virtualenv -p /usr/bin/python3 venv`
 `. ./venv/bin/activate`
 - Install the requirements:
-- • `pip3 install --no-cache-dir -r re*/st*/op*.txt`
+  • `pip3 install --no-cache-dir -r re*/st*/op*.txt`
 
   • `pip3 install --no-cache-dir  -r requirements.txt`
 - Fill your variables in the env by
