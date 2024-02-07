@@ -59,7 +59,7 @@ async def f2i(e):
         os.remove(html)
 
 
-@ultroid_cmd(pattern="nulis( (.*)|$)")
+@ultroid_cmd(pattern="write( (.*)|$)")
 async def writer(e):
     if e.reply_to:
         reply = await e.get_reply_message()
@@ -71,12 +71,12 @@ async def writer(e):
     k = await e.eor(get_string("com_1"))
     img = Image.open("resources/extras/template.jpg")
     draw = ImageDraw.Draw(img)
-    font = ImageFont.truetype("resources/fonts/assfont.ttf", size=36)
+    font = ImageFont.truetype("resources/fonts/assfont.ttf", 30)
     x, y = 150, 140
     lines = text_set(text)
-    line_height = font.getbbox("\n")[3]
+    line_height = font.getbox("\n")[1]
     for line in lines:
-        draw.text((x, y), line, fill=(5, 22, 55), font=font)
+        draw.text((x, y), line, fill=(1, 22, 55), font=font)
         y = y + line_height - 5
     file = "ult.jpg"
     img.save(file)
