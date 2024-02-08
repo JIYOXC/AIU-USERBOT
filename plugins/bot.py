@@ -79,9 +79,10 @@ buttons = [
 alive_txt = """
 ♨️ ULTROID USERBOT ♨️
 
-  ◍ Version - {}
-  ◍ Py-Ultroid - {}
-  ◍ Telethon - {}
+  ♨️ Version - {}
+  ♨️ Py-Ultroid - {}
+  ♨️ Telethon - {}
+  ♨️ Pyrogram - {}
 """
 
 in_alive = "{}\n\n♨️ <b>Ultroid Version -><b> <code>{}</code>\n♨️ <b>PyUltroid -></b> <code>{}</code>\n♨️ <b>Python -></b> <code>{}</code>\n♨️ <b>Uptime -></b> <code>{}</code>\n♨️ <b>Branch -></b>[ {} ]\n\n• <b>Join @TeamUltroid</b>"
