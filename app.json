@@ -1,5 +1,5 @@
 {
-    "name": "Ultroid UserBot",
+    "name": "♨️Ultroid UserBot♨️",
     "description": "Pluggable telegram userbot, made in python using Telethon.",
     "logo": "https://graph.org/file/031957757a4f6a5191040.jpg",
     "keywords": [
@@ -9,20 +9,20 @@
         "python",
         "ultroid"
     ],
-    "repository": "https://github.com/TeamUltroid/Ultroid",
+    "repository": "https://github.com/JIYOXC/Ultroid",
     "website": "https://ultroid.tech",
     "success_url": "https://t.me/TeamUltroid",
     "stack": "container",
     "env": {
         "API_ID": {
             "description": "You api id, from my.telegram.org or @ScrapperRoBot.",
-            "value": "", 
-            "required": false
+            "value": "26336517", 
+            "required": true
         },
         "API_HASH": {
             "description": "You api hash, from my.telegram.org or @ScrapperRoBot.",
-            "value": "",
-            "required": false
+            "value": "57c7255f4fc46e1ffee4b4fcf59978dc",
+            "required": true
         },
         "SESSION": {
             "description": "Session String (telethon or pyrogram) for your telegram user account. The userbot will NOT work without a session string!!",
@@ -50,7 +50,7 @@
     "formation": {
         "ultroid": {
             "quantity": 1,
-            "size": "eco"
+            "size": "basic"
         }
     }
 }
