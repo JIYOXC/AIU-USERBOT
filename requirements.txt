@@ -4,6 +4,5 @@ https://github.com/New-dev0/Telethon/archive/platy.zip
 python-decouple
 python-dotenv
 pyrogram==2.0.106
-pytgcalls
-py-tgcalls==0.9.2
+pytgcalls==3.0.0.dev22
 pillow==10.2.0
