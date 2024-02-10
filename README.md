@@ -62,7 +62,7 @@
 
 • Install screen to keep running your bot when you close the terminal by 
   
-  • `SCREEN -S Ultroid`
+  • `screen -S Ultroid`
 
 • Finally Run the bot:
   
