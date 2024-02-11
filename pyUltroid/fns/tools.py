@@ -480,7 +480,7 @@ async def get_chatbot_reply(message):
         return "Error decoding JSON response from the chatbot server."
     except Exception as e:
         LOGS.exception(f"An unexpected error occurred: {e}")
-        return "An unexpected error occurred while processing the chatbot"
+        return "An unexpected error occurred while processing the chatbot
 
 
 # ------ Audio \\ Video tools funcn --------#
