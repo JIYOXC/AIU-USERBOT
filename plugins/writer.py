@@ -71,10 +71,10 @@ async def writer(e):
     k = await e.eor(get_string("com_1"))
     img = Image.open("resources/extras/template.jpg")
     draw = ImageDraw.Draw(img)
-    font = ImageFont.truetype("resources/fonts/assfont.ttf", 30)
+    font = ImageFont.truetype("resources/fonts/assfont.ttf", 36)
     x, y = 150, 140
     lines = text_set(text)
-    line_height = font.getbbox("\n")[2]
+    line_height = font.getbbox("\n")[3]
     for line in lines:
         draw.text((x, y), line, fill=(5, 22, 55), font=font)
         y = y + line_height - 5
