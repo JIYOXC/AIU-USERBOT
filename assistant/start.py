@@ -113,9 +113,7 @@ async def ultroid(event):
             if udB.get_key("PMBOT"):
                 ok = "You can contact my master using this bot!!\n\nSend your Message, I will Deliver it To Master."
             await event.reply(
-                f"👋🏻 ʜᴀʟᴏ {mention}, @ULTROID_USERTBOT ᴀᴅᴀʟᴀʜ ᴜsᴇʀʙᴏᴛ ʏᴀɴɢ ʙɪsᴀ ᴋᴀʟɪᴀɴ ʙᴜᴀᴛ ᴅᴇɴɢᴀɴ ᴍᴜᴅᴀʜ
-
-👉🏻 sɪʟᴀʜᴋᴀɴ ᴋʟɪᴋ ᴛᴏᴍʙᴏʟ ᴅɪ ʙᴀᴡᴀʜ ᴜɴᴛᴜᴋ ᴍᴇᴍʙᴜᴀᴛ ᴜsᴇʀʙᴏᴛ / ᴍᴇᴍʙᴇʟɪ ᴜsᴇʀʙᴏᴛ",
+                f"Hey there {mention}, this is Ultroid Assistant of {me}!\n\n{ok}",
                 file=udB.get_key("STARTMEDIA"),
                 buttons=[Button.inline("Info.", data="ownerinfo")]
                 if Owner_info_msg
@@ -239,4 +237,5 @@ async def timezone_(event):
             await conv.send_message(
                 "Wrong TimeZone, Try again",
                 buttons=get_back_button("mainmenu"),
-            )
+)
+                                                                    
