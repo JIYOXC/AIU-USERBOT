@@ -184,7 +184,7 @@ async def lol(ult):
 
 async def mention_user(user_id):
     try:
-        user_entity = await event.client.get_entity(user_id)
+        user_entity = await ultroid_bot.get_entity(user_id)
         first_name = user_entity.first_name
         mention_text = f"[{first_name}](tg://user?id={user_id})"
         await event.reply(mention_text)
