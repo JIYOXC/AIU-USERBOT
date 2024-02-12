@@ -59,6 +59,7 @@ from . import (
     start_time,
     time_formatter,
     udB,
+    ultroid_bot,
     ultroid_cmd,
     ultroid_version,
     updater,
