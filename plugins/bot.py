@@ -37,6 +37,7 @@ from . import (
     ATRA_COL,
     LOGS,
     OWNER_NAME,
+    OWNER_ID,
     ULTROID_IMAGES,
     Button,
     Carbon,
@@ -188,13 +189,24 @@ async def _(event):
     uptime = time_formatter((time.time() - start_time) * 1000)
     await x.edit(get_string("ping").format(end, uptime, OWNER_NAME))
 
+async def mention_user(user_id):
+    try:
+        user_entity = await ultroid_bot.get_entity(user_id)
+        first_name = user_entity.first_name
+        mention_text = f"[{first_name}](tg://user?id={user_id})"
+        await event.reply(mention_text)
+    except Exception as e:
+        print(f"Failed to mention user: {e}")
+
 @ultroid_cmd(pattern="lping$", chats=[], type=["official", "assistant"])
 async def _(event):
+    user_id = OWNER_ID
+    ment = await mention_user(user_id)
     start = time.time()
     x = await event.eor("PONG ♨️!!")
     end = round((time.time() - start) * 1000)
     uptime = time_formatter((time.time() - start_time) * 1000)
-    await x.edit(get_string("lping").format(end, uptime, ment))
+    await x.edit(get_string("ping").format(end, uptime, ment))
 
 @ultroid_cmd(
     pattern="cmds$",
