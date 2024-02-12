@@ -194,7 +194,7 @@ async def _(event):
     x = await event.eor("PONG ♨️!!")
     end = round((time.time() - start) * 1000)
     uptime = time_formatter((time.time() - start_time) * 1000)
-    await x.edit(get_string("lping").format(end, uptime, OWNER_NAME))
+    await x.edit(get_string("lping").format(end, uptime, user))
 
 @ultroid_cmd(
     pattern="cmds$",
