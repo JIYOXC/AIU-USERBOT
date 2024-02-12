@@ -20,15 +20,15 @@ from . import HNDLR, LOGS, OWNER_NAME, asst, get_string, inline_pic, udB, ultroi
 _main_help_menu = [
     [
         Button.inline(get_string("help_4"), data="uh_Official_"),
-        #Button.inline(get_string("help_5"), data="uh_Addons_"),
+        Button.inline(get_string("help_5"), data="uh_Addons_"),
     ],
     [
-        #Button.inline(get_string("help_6"), data="uh_VCBot_"),
+        Button.inline(get_string("help_6"), data="uh_VCBot_"),
         #Button.inline(get_string("help_7"), data="inlone"),
     ],
     [
-        #Button.inline(get_string("help_8"), data="ownr"),
-        #Button.url(
+        Button.inline(get_string("help_8"), data="ownr"),
+        Button.url(
             get_string("help_9"), url=f"https://t.me/{asst.me.username}?start=set"
         ),
     ],
