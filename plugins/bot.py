@@ -190,6 +190,8 @@ async def _(event):
 
 @ultroid_cmd(pattern="lping$", chats=[], type=["official", "assistant"])
 async def _(event):
+    user_id = OWNER_ID
+    ment = await mention_user(user_id)
     start = time.time()
     x = await event.eor("PONG ♨️!!")
     end = round((time.time() - start) * 1000)
