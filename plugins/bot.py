@@ -186,7 +186,7 @@ async def mention_user(user_id):
     try:
         user_entity = await ultroid_bot.get_entity(user_id)
         first_name = user_entity.first_name
-        mention_text = f"[{first_name}](tg://user?id={user_id})"
+        mention_text = (ultroid_bot.full_name)
         return mention_text
     except Exception as e:
         print(f"Failed to mention user: {e}")
@@ -203,7 +203,7 @@ async def _(event):
     if opt == "l":
         await x.edit(get_string("lping").format(end, uptime, f"{ment}"))
     else:
-        await x.edit(get_string("ping").format(end, uptime, OWNER_NAME))
+        await x.edit(get_string("ping").format(end, uptime, OWNER_ID))
 
 
 @ultroid_cmd(
