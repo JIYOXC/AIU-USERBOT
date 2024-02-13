@@ -58,7 +58,7 @@ SUP_BUTTONS = [
 # --------------------BUTTONS--------------------#
 
 
-#@in_pattern(owner=True, func=lambda x: not x.text)
+@in_pattern(owner=True, func=lambda x: not x.text)
 async def inline_alive(o):
     TLINK = inline_pic("https://graph.org/file/74d6259983e0642923fdb.jpg") or " "
     MSG = "• **Ultroid Userbot •**"
@@ -66,7 +66,7 @@ async def inline_alive(o):
         "https://graph.org/file/acd4f5d61369f74c5e7a7.jpg", 0, "image/jpg", []
     )
     RES = [
-        #await o.builder.article(
+        await o.builder.article(
             type="photo",
             text=MSG,
             include_media=True,
