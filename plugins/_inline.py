@@ -60,7 +60,7 @@ SUP_BUTTONS = [
 
 #@in_pattern(owner=True, func=lambda x: not x.text)
 async def inline_alive(o):
-    TLINK = inline_pic() or "https://graph.org/file/74d6259983e0642923fdb.jpg"
+    TLINK = inline_pic("https://graph.org/file/74d6259983e0642923fdb.jpg") or " "
     MSG = "• **Ultroid Userbot •**"
     WEB0 = InputWebDocument(
         "https://graph.org/file/acd4f5d61369f74c5e7a7.jpg", 0, "image/jpg", []
@@ -98,9 +98,9 @@ async def inline_handler(event):
         len(HELP.get("Addons", [])),
         len(z),
     )
-    if inline_pic():
+    if inline_pic("https://graph.org/file/74d6259983e0642923fdb.jpg"):
         result = await event.builder.photo(
-            file=inline_pic(),
+            file=inline_pic("https://graph.org/file/74d6259983e0642923fdb.jpg"),
             link_preview=False,
             text=text,
             buttons=_main_help_menu,
