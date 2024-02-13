@@ -98,7 +98,7 @@ async def inline_handler(event):
         len(HELP.get("Addons", [])),
         len(z),
     )
-    if inline_pic("https://graph.org/file/74d6259983e0642923fdb.jpg"):
+    if inline_pic():
         result = await event.builder.photo(
             file=inline_pic("https://graph.org/file/74d6259983e0642923fdb.jpg"),
             link_preview=False,
