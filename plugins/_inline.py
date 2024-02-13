@@ -60,10 +60,10 @@ SUP_BUTTONS = [
 
 @in_pattern(owner=True, func=lambda x: not x.text)
 async def inline_alive(o):
-    TLINK = inline_pic() or " "
+    TLINK = inline_pic() or "https://graph.org/file/844c65d8527f06154bf25.mp4"
     MSG = "♨️ 𝐔𝐋𝐓𝐑𝐎𝐈𝐃 𝐔𝐒𝐄𝐑𝐁𝐎𝐓 ♨️"
     WEB0 = InputWebDocument(
-        " ", 0, "image/jpg", []
+        "https://graph.org/file/844c65d8527f06154bf25.mp4", 0, "image/jpg", []
     )
     RES = [
         await o.builder.article(
