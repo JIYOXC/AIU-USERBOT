@@ -100,7 +100,7 @@ async def inline_handler(event):
     )
     if inline_pic():
         result = await event.builder.photo(
-            file=inline_pic("https://graph.org/file/74d6259983e0642923fdb.jpg"),
+            file=inline_pic(),
             link_preview=False,
             text=text,
             buttons=_main_help_menu,
