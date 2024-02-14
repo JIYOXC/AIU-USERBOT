@@ -63,7 +63,7 @@ async def inline_alive(o):
     TLINK = inline_pic() or "https://graph.org/file/74d6259983e0642923fdb.jpg"
     MSG = "• **Ultroid Userbot •**"
     WEB0 = InputWebDocument(
-        "https://graph.org/file/acd4f5d61369f74c5e7a7.jpg", 0, "image/jpg", []
+        "https://graph.org/file/acd4f5d61369f74c5e7a7.jpg", 0, "https://graph.org/file/acd4f5d61369f74c5e7a7.jpg", []
     )
     RES = [
         await o.builder.article(
@@ -75,7 +75,7 @@ async def inline_alive(o):
             description="Userbot | Telethon",
             url=TLINK,
             thumb=WEB0,
-            content=InputWebDocument(TLINK, 0, "image/jpg", []),
+            content=InputWebDocument(TLINK, 0, "https://graph.org/file/acd4f5d61369f74c5e7a7.jpg", []),
         )
     ]
     await o.answer(
