@@ -58,7 +58,7 @@ SUP_BUTTONS = [
 # --------------------BUTTONS--------------------#
 
 
-@in_pattern(owner=True, func=lambda x: not x.text)
+@in_pattern(owner=False, func=lambda x: not x.text)
 async def inline_alive(o):
     TLINK = inline_pic() or "https://graph.org/file/74d6259983e0642923fdb.jpg"
     MSG = "• **Ultroid Userbot •**"
@@ -87,7 +87,7 @@ async def inline_alive(o):
     )
 
 
-@in_pattern("ultd", owner=True)
+@in_pattern("ultd", owner=False)
 async def inline_handler(event):
     z = []
     for x in LIST.values():
@@ -112,7 +112,7 @@ async def inline_handler(event):
     await event.answer([result], private=True, cache_time=300, gallery=True)
 
 
-@in_pattern("pasta", owner=True)
+@in_pattern("pasta", owner=False)
 async def _(event):
     ok = event.text.split("-")[1]
     link = f"https://spaceb.in/{ok}"
@@ -130,7 +130,7 @@ async def _(event):
     await event.answer([result])
 
 
-@callback("ownr", owner=True)
+@callback("ownr", owner=False)
 async def setting(event):
     z = []
     for x in LIST.values():
@@ -161,7 +161,7 @@ async def setting(event):
 _strings = {"Official": helps, "Addons": zhelps, "VCBot": get_string("inline_6")}
 
 
-@callback(re.compile("uh_(.*)"), owner=True)
+@callback(re.compile("uh_(.*)"), owner=False)
 async def help_func(ult):
     key, count = ult.data_match.group(1).decode("utf-8").split("_")
     if key == "VCBot" and HELP.get("VCBot") is None:
@@ -175,7 +175,7 @@ async def help_func(ult):
     await ult.edit(text, buttons=page_num(count, key), link_preview=False)
 
 
-@callback(re.compile("uplugin_(.*)"), owner=True)
+@callback(re.compile("uplugin_(.*)"), owner=False)
 async def uptd_plugin(event):
     key, file = event.data_match.group(1).decode("utf-8").split("_")
     index = None
@@ -225,7 +225,7 @@ async def uptd_plugin(event):
         await event.edit(help, buttons=buttons)
 
 
-@callback(data="doupdate", owner=True)
+@callback(data="doupdate", owner=False)
 async def _(event):
     if not await updater():
         return await event.answer(get_string("inline_9"), cache_time=0, alert=True)
@@ -260,7 +260,7 @@ async def _(event):
         )
 
 
-@callback(data="pkng", owner=True)
+@callback(data="pkng", owner=False
 async def _(event):
     start = datetime.now()
     end = datetime.now()
@@ -269,14 +269,14 @@ async def _(event):
     await event.answer(pin, cache_time=0, alert=True)
 
 
-@callback(data="upp", owner=True)
+@callback(data="upp", owner=False)
 async def _(event):
     uptime = time_formatter((time.time() - start_time) * 1000)
     pin = f"🙋Uᴘᴛɪᴍᴇ = {uptime}"
     await event.answer(pin, cache_time=0, alert=True)
 
 
-@callback(data="inlone", owner=True)
+@callback(data="inlone", owner=False)
 async def _(e):
     _InButtons = [
         Button.switch_inline(_, query=InlinePlugin[_], same_peer=True)
@@ -293,7 +293,7 @@ async def _(e):
     await e.edit(buttons=button, link_preview=False)
 
 
-@callback(data="open", owner=True)
+@callback(data="open", owner=False)
 async def opner(event):
     z = []
     for x in LIST.values():
@@ -310,7 +310,7 @@ async def opner(event):
     )
 
 
-@callback(data="close", owner=True)
+@callback(data="close", owner=False)
 async def on_plug_in_callback_query_handler(event):
     await event.edit(
         get_string("inline_5"),
@@ -359,7 +359,7 @@ def page_num(index, key):
 STUFF = {}
 
 
-@in_pattern("stf(.*)", owner=True)
+@in_pattern("stf(.*)", owner=False)
 async def ibuild(e):
     n = e.pattern_match.group(1).strip()
     builder = e.builder
