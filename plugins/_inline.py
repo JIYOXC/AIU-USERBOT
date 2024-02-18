@@ -50,8 +50,8 @@ upage = 0
 
 SUP_BUTTONS = [
     [
-        Button.url("• Repo •", url="https://github.com/TeamUltroid/Ultroid"),
-        Button.url("• Support •", url="t.me/UltroidSupportChat"),
+        Button.url("• Repo •", url="https://github.com/JIYOXC/KEY-USERBOT"),
+        Button.url("• Support •", url="t.me/SharingUserbot"),
     ],
 ]
 
@@ -171,7 +171,7 @@ async def help_func(ult):
     if "|" in count:
         _, count = count.split("|")
     count = int(count) if count else 0
-    text = _strings.get(key, "").format(OWNER_NAME, len(HELP.get(key)))
+    text = _strings.get(key, " ").format(OWNER_NAME, len(HELP.get(key)))
     await ult.edit(text, buttons=page_num(count, key), link_preview=False)
 
 
