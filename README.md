@@ -2,7 +2,7 @@
   <img src="https://graph.org/file/ecded2fc35bf32e8df4d4.jpg" alt="TeamUltroid Logo">
 </p>
 <h1 align="center">
-  <b>♨️KEY - USERBOT♨️</b>
+  <b>♨️ULTROID - USERBOT♨️</b>
 </h1>
 
 <b>A stable pluggable Telegram userbot + Voice & Video Call music bot, based on Telethon.</b>
