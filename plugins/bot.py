@@ -79,8 +79,6 @@ buttons = [
 
 # Will move to strings
 alive_txt = """
-♨️ 𝚂𝙷𝙰𝚁𝙸𝙽𝙶 𝚄𝚂𝙴𝚁𝙱𝙾𝚃 ♨️
-
   ♨️ Version - {}
   ♨️ Py-Ultroid - {}
   ♨️ Telethon - {}
