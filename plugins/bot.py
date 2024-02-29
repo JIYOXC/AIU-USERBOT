@@ -201,7 +201,7 @@ async def _(event):
     if opt == "l":
         await x.edit(get_string("lping").format(end, uptime, f"{ment}"))
     else:
-        await x.edit(get_string("ping").format(end, uptime, OWNER_NAME))
+        await x.edit(get_string("ping").format(end, uptime, f"{ment}"))
 
 
 @ultroid_cmd(
