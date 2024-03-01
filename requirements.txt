@@ -5,9 +5,9 @@ git+https://github.com/New-dev0/AsyncLyricsExtractor.git
 python-decouple
 python-dotenv
 pytgcalls==3.0.0.dev24
+py-tgcalls==1.2.2
 pillow==10.2.0
 pyrogram==2.0.106
-tgcalls==3.0.0
 telegraph==2.2.0
 fonttools
 gtts
