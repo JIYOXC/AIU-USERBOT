@@ -68,7 +68,6 @@ async def inline_alive(o):
     RES = [
         await o.builder.article(
             text=MSG,
-            include_media=True,
             buttons=SUP_BUTTONS,
             title="Ultroid Userbot",
             description="Userbot | Telethon",
