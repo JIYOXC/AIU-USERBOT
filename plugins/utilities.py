@@ -27,7 +27,7 @@
 • `{i}rmbg <reply to pic>`
     Remove background from that picture.
 
-• `{i}telegraph <reply to media/text>`
+• `{i}telgraph <reply to media/text>`
     Upload media/text to telegraph.
 
 • `{i}json <reply to msg>`
