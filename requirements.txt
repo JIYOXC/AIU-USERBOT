@@ -4,7 +4,6 @@ https://github.com/New-dev0/Telethon/archive/platy.zip
 telegraph
 importlib-metadata==4.6.4
 incremental==21.3.0
-instagraph
 aiohttp==3.8.5
 aiosignal==1.3.1
 akinator==1.1.1
