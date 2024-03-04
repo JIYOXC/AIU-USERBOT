@@ -66,7 +66,7 @@ async def f2i(e):
         os.remove(html)
 
 
-@ultroid_cmd(pattern="write( (.*)|$)")
+@ultroid_cmd(pattern="writer( (.*)|$)")
 async def writer(e):
     if e.reply_to:
         reply = await e.get_reply_message()
