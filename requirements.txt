@@ -5,6 +5,3 @@ Pyrogram==2.0.106
 pytgcalls==3.0.0.dev24
 python-decouple==3.8
 python-dotenv==1.0.0
-covid
-emoji
-fonttools
