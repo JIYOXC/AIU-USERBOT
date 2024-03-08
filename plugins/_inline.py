@@ -320,9 +320,9 @@ def page_num(index, key):
     rows = udB.get_key("HELP_ROWS") or 5
     cols = udB.get_key("HELP_COLUMNS") or 2
     loaded = HELP.get(key, [])
-    emoji = udB.get_key("EMOJI_IN_HELP") or "♨️"
+    emoji = udB.get_key("EMOJI_IN_HELP") or "✘"
     List = [
-        Button.inline(f"{emoji} {♨️} {emoji}", data=f"uplugin_{key}_{x}|{index}")
+        Button.inline(f"{emoji} {x} {emoji}", data=f"uplugin_{key}_{x}|{index}")
         for x in sorted(loaded)
     ]
     all_ = split_list(List, cols)
