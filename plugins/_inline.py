@@ -50,7 +50,7 @@ upage = 0
 
 SUP_BUTTONS = [
     [
-        Button.url("• Repo •", url="https://github.com/JIYOXC/Ultroid"),
+        Button.url("• Repo •", url="https://github.com/JIYOXC/AIU-USERBOT"),
         Button.url("• Support •", url="t.me/UltroidSupportChat"),
     ],
 ]
@@ -61,7 +61,7 @@ SUP_BUTTONS = [
 @in_pattern(owner=True, func=lambda x: not x.text)
 async def inline_alive(o):
     TLINK = inline_pic() or "https://graph.org/file/74d6259983e0642923fdb.jpg"
-    MSG = "• **Ultroid Userbot •**"
+    MSG = "♨️ ** AIU-USERBOT ♨️**"
     WEB0 = InputWebDocument(
         "https://graph.org/file/acd4f5d61369f74c5e7a7.jpg", 0, "image/jpg", []
     )
@@ -69,7 +69,7 @@ async def inline_alive(o):
         await o.builder.article(
             text=MSG,
             buttons=SUP_BUTTONS,
-            title="Ultroid Userbot",
+            title="AIU-USERBOT",
             description="Userbot | Telethon",
             url=TLINK,
             thumb=WEB0,
@@ -193,7 +193,7 @@ async def uptd_plugin(event):
                 help_ += "\n"
     if not help_:
         help_ = f"{file} has no Detailed Help!"
-    help_ += "\n© @TeamUltroid"
+    help_ += "\n© @aiusupportt"
     buttons = []
     if inline_pic():
         data = f"sndplug_{key}_{file}"
@@ -320,9 +320,9 @@ def page_num(index, key):
     rows = udB.get_key("HELP_ROWS") or 5
     cols = udB.get_key("HELP_COLUMNS") or 2
     loaded = HELP.get(key, [])
-    emoji = udB.get_key("EMOJI_IN_HELP") or "✘"
+    emoji = udB.get_key("EMOJI_IN_HELP") or "♨️"
     List = [
-        Button.inline(f"{emoji} {x} {emoji}", data=f"uplugin_{key}_{x}|{index}")
+        Button.inline(f"{emoji} {♨️} {emoji}", data=f"uplugin_{key}_{x}|{index}")
         for x in sorted(loaded)
     ]
     all_ = split_list(List, cols)
@@ -398,7 +398,7 @@ async def ibuild(e):
                             _pic,
                             title="Ultroid Op",
                             text=txt,
-                            description="@TeamUltroid",
+                            description="@aiusupportt",
                             buttons=btn,
                             link_preview=False,
                         )
@@ -414,7 +414,7 @@ async def ibuild(e):
                         title="Ultroid Op",
                         type=_type,
                         text=txt,
-                        description="@TeamUltroid",
+                        description="@aiusupport",
                         include_media=include_media,
                         buttons=btn,
                         thumb=cont,
