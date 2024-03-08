@@ -2,12 +2,12 @@
   <img src="https://graph.org/file/ecded2fc35bf32e8df4d4.jpg" alt="TeamUltroid Logo">
 </p>
 <h1 align="center">
-  <b>♨️ULTROID - USERBOT♨️</b>
+  <b>♨️AIU - USERBOT♨️</b>
 </h1>
 
 <b>A stable pluggable Telegram userbot + Voice & Video Call music bot, based on Telethon.</b>
 
-[![](https://img.shields.io/badge/Ultroid-v1.0-crimson)](#)
+[![](https://img.shields.io/badge/AIU-v1.0-crimson)](#)
 [![Stars](https://img.shields.io/github/stars/TeamUltroid/Ultroid?style=flat-square&color=yellow)](https://github.com/TeamUltroid/Ultroid/stargazers)
 [![Forks](https://img.shields.io/github/forks/TeamUltroid/Ultroid?style=flat-square&color=orange)](https://github.com/TeamUltroid/Ultroid/fork)
 [![Size](https://img.shields.io/github/repo-size/TeamUltroid/Ultroid?style=flat-square&color=green)](https://github.com/TeamUltroid/Ultroid/)   
@@ -33,15 +33,15 @@
 <p align="center"><a href="https://dashboard.heroku.com/new?template=https://github.com/JIYOXC/Ultroid"> <img src="https://img.shields.io/badge/Deploy%20On%20Heroku-black?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
 
 ♨️ VPS DEPLOY 
-- Get your [Necessary Variables](https://github.com/JIYOXC/Ultroid/blob/main/.env.sample)
+- Get your [Necessary Variables](https://github.com/JIYOXC/AIU-USERBOT/blob/main/.env.sample)
 
 - Clone the repository:    
 
-  • `git clone https://github.com/JIYOXC/Ultroid`
+  • `git clone https://github.com/JIYOXC/AIU-USERBOT`
 
 - Go to the cloned folder:    
 
-  • `cd Ultroid`
+  • `cd AIU-USERBOT`
 
 - Create a virtual env:      
 
@@ -62,7 +62,7 @@
 
 • Install screen to keep running your bot when you close the terminal by 
   
-  • `screen -S Ultroid`
+  • `screen -S AIU-USERBOT`
 
 • Finally Run the bot:
   
@@ -86,6 +86,7 @@ Ultroid is licensed under [GNU Affero General Public License](https://www.gnu.or
 
 # Credits
 * [![TeamUltroid-Devs](https://img.shields.io/static/v1?label=Teamultroid&message=devs&color=critical)](https://t.me/@xditya)
+* [![JIYOXC-MOD](https://img.shields.io/static/v1?label=JIYOXC&message=MOD&color=critical)](https://t.me/@REVAIU)
 * [Lonami](https://github.com/LonamiWebs/) for [Telethon.](https://github.com/LonamiWebs/Telethon)
 * [MarshalX](https://github.com/MarshalX) for [PyTgCalls.](https://github.com/MarshalX/tgcalls)
 
