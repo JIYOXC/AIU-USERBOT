@@ -72,8 +72,8 @@ def ULTPIC():
 
 buttons = [
     [
-        Button.url(get_string("bot_3"), "https://github.com/JIYOXC/Ultroid"),
-        Button.url(get_string("bot_4"), "t.me/UltroidSupportChat"),
+        Button.url(get_string("bot_3"), "https://github.com/JIYOXC/AIU-USERBOT"),
+        Button.url(get_string("bot_4"), "t.me/aiusupportt"),
     ]
 ]
 
@@ -84,7 +84,7 @@ alive_txt = """
   ♨️ Telethon - {}
 """
 
-in_alive = "{}\n\n♨️ <b>𝚂𝙷𝙰𝚁𝙸𝙽𝙶 Version -><b> <code>{}</code>\n♨️ <b>PyUltroid -></b> <code>{}</code>\n♨️ <b>Python -></b> <code>{}</code>\n♨️ <b>Uptime -></b> <code>{}</code>\n♨️ <b>Branch -></b>[ {} ]\n\n• <b>Join @TeamUltroid</b>"
+in_alive = "{}\n\n♨️ <b>𝚂𝙷𝙰𝚁𝙸𝙽𝙶 Version -><b> <code>{}</code>\n♨️ <b>PyUltroid -></b> <code>{}</code>\n♨️ <b>Python -></b> <code>{}</code>\n♨️ <b>Uptime -></b> <code>{}</code>\n♨️ <b>Branch -></b>[ {} ]\n\n• <b>Join @aiusupport</b>"
 
 
 @callback("alive")
@@ -261,7 +261,7 @@ async def _(event):
         if isinstance(file, dict):
             await event.eor(f"`{file}`")
             return
-        await event.reply("**Ultroid Logs.**", file=file)
+        await event.reply("**Aiu Logs.**", file=file)
     elif opt == "open":
         with open("ultroid.log", "r") as f:
             file = f.read()[-4000:]
@@ -307,7 +307,7 @@ async def inline_alive(ult):
                     await builder.document(
                         pic,
                         title="Inline Alive",
-                        description="@TeamUltroid",
+                        description="@aiusupportt",
                         parse_mode="html",
                         buttons=buttons,
                     )
