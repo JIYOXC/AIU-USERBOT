@@ -76,7 +76,7 @@ async def writer(e):
     else:
         return await eod(e, get_string("writer_1"))
     k = await e.eor(get_string("com_1"))
-    img = Image.open("resources/extras/template.jpg")
+    img = open("resources/extras/template.jpg")
     draw = ImageDraw.Draw(img)
     font = ImageFont.truetype("resources/fonts/assfont.ttf", 30)
     x, y = 150, 140
