@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://graph.org/file/ecded2fc35bf32e8df4d4.jpg" alt="TeamUltroid Logo">
+  <img src="https://graph.org/file/e339bf1895269054b62ed.jpg" alt="TeamUltroid Logo">
 </p>
 <h1 align="center">
   <b>♨️AIU - USERBOT♨️</b>
