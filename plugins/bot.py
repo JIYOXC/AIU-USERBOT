@@ -189,20 +189,20 @@ async def mention_user(user_id):
     except Exception as e:
         print(f"Failed to mention user: {e}")
 
-@ultroid_cmd(pattern="ping(|l)$", chats=[], type=["assistant"])
+@ultroid_cmd(pattern="ping(|1|2)$", chats=[], type=["assistant"])
 async def _(event):
     user_id = OWNER_ID
     ment = await mention_user(user_id)
     opt = event.pattern_match.group(1)
     start = time.time()
-    x = await event.reply("PONG ♨️!!")
     end = round((time.time() - start) * 1000)
     uptime = time_formatter((time.time() - start_time) * 1000)
-    if opt == "l":
-        await x.reply(get_string("lping").format(end, uptime, f"{ment}"))
+    if opt == "1":
+        await x.reply(get_string("1ping").format(end, uptime, f"{ment}"))
     else:
         await x.reply(get_string("ping").format(end, uptime))
-
+    else:
+        await x.reply(get_string("2ping").format(end, uptime, f"{ment}"))
 
 @ultroid_cmd(
     pattern="cmds$",
