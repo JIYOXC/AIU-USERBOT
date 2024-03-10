@@ -195,7 +195,7 @@ async def _(event):
     ment = await mention_user(user_id)
     opt = event.pattern_match.group(1)
     start = time.time()
-    x = await event.eor("Pong !")
+    x = await event.eor("ping")
     end = round((time.time() - start) * 1000)
     uptime = time_formatter((time.time() - start_time) * 1000)
     if opt == "l":
