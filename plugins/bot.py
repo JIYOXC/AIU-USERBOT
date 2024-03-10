@@ -193,7 +193,7 @@ async def mention_user(user_id):
 async def _(event):
     user_id = OWNER_ID
     ment = await mention_user(user_id)
-    opt = event.pattern_match.group(1)
+    opt = event.pattern_match.group(2)
     start = time.time()
     end = round((time.time() - start) * 1000)
     uptime = time_formatter((time.time() - start_time) * 1000)
@@ -202,6 +202,7 @@ async def _(event):
     else:
         await x.reply(get_string("ping").format(end, uptime))
     else:
+    if opt == "2":
         await x.reply(get_string("2ping").format(end, uptime, f"{ment}"))
 
 @ultroid_cmd(
