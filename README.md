@@ -50,9 +50,10 @@
 
 - Install the requirements:
 
-  • `pip3 install --no-cache-dir -r re*/st*/op*.txt`
-
   • `pip3 install --no-cache-dir  -r requirements.txt`
+
+  • `pip3 install --no-cache-dir -r re*/st*/op*.txt`
+  
 
 - Fill your variables in the env by
 
