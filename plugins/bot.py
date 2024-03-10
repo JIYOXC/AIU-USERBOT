@@ -193,7 +193,7 @@ async def mention_user(user_id):
 async def _(event):
     user_id = OWNER_ID
     ment = await mention_user(user_id)
-    opt = event.pattern_match.group(2)
+    opt = event.pattern_match.group(1)
     start = time.time()
     end = round((time.time() - start) * 1000)
     uptime = time_formatter((time.time() - start_time) * 1000)
