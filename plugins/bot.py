@@ -195,13 +195,14 @@ async def _(event):
     ment = await mention_user(user_id)
     opt = event.pattern_match.group(1)
     start = time.time()
+    x = await event.eor("Pong !")
+    end = round((time.time() - start) * 1000)
+    uptime = time_formatter((time.time() - start_time) * 1000)
     if opt == "l":
         await event.reply(get_string("lping").format(end, uptime, f"{ment}"))
     else:
         await event.reply(get_string("ping").format(end, uptime))
-    end = round((time.time() - start) * 1000)
-uptime = time_formatter((time.time() - start_time) * 1000)
-    
+      
 @ultroid_cmd(
     pattern="cmds$",
 )
