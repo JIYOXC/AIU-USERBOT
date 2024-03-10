@@ -198,9 +198,9 @@ async def _(event):
     end = round((time.time() - start) * 1000)
     uptime = time_formatter((time.time() - start_time) * 1000)
     if opt == "l":
-        await x.reply(get_string("lping").format(end, uptime, f"{ment}"))
+        await event.reply(get_string("lping").format(end, uptime, f"{ment}"))
     else:
-        await x.reply(get_string("ping").format(end, uptime))
+        await event.reply(get_string("ping").format(end, uptime))
     
 @ultroid_cmd(
     pattern="cmds$",
