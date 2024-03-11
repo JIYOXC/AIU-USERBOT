@@ -203,7 +203,7 @@ async def _(event):
     if prem == "x":
         await x.reply(get_string("pping").format(end, uptime))
     elif prem == "s":
-        await x.reply(get_string("lping").format(end, uptime, f"{ment}"))
+        await x.reply(get_string("iping").format(end, uptime, f"{ment}"))
     else:
         await x.edit(get_string("ping").format(end, uptime))
       
