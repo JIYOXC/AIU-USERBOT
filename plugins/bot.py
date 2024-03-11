@@ -201,9 +201,9 @@ async def _(event):
     end = round((time.time() - start) * 1000)
     uptime = time_formatter((time.time() - start_time) * 1000)
     if prem == "p":
-        await x.edit(get_string("pping").format(end, uptime))
+        await x.reply(get_string("pping").format(end, uptime))
     elif prem == "l":
-        await x.edit(get_string("lping").format(end, uptime, f"{ment}"))
+        await x.reply(get_string("lping").format(end, uptime, f"{ment}"))
     else:
         await x.edit(get_string("ping").format(end, uptime))
       
