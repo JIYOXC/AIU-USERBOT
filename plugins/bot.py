@@ -22,6 +22,7 @@ from telethon.errors.rpcerrorlist import (
 )
 
 from pyUltroid.version import __version__ as UltVer
+from pyUltroid.fns.custom_markdown import CustomMarkdown
 
 from . import HOSTED_ON, LOGS
 
@@ -191,6 +192,7 @@ async def mention_user(user_id):
 
 @ultroid_cmd(pattern="ping(|p|l)$", chats=[], type=["official", "assistant"])
 async def _(event):
+    ultroid_bot.parse_mode = CustomMarkdown()
     user_id = OWNER_ID
     ment = await mention_user(user_id)
     prem = event.pattern_match.group(1)
