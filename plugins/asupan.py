@@ -9,7 +9,7 @@ from telethon.tl.types import InputMessagesFilterVideo, InputMessagesFilterVoice
 from . import ultroid_cmd
 
 @ultroid_cmd(pattern="asupan$")
-async def _(e):
+async def _(event):
     xx = await e.eor(event"`🔍Tunggu Sebentar...`")
     try:
         asupannya = [
