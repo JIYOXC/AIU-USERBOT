@@ -4,9 +4,9 @@
 # ⚠️ Do not remove credits
 
 from secrets import choice
-
+import asyncio
 from telethon.tl.types import InputMessagesFilterVideo, InputMessagesFilterVoice
-
+from . import ultroid.cmd
 
 @ultroid_cmd(pattern="asupan$")
 async def _(event):
