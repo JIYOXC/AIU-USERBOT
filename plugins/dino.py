@@ -2,9 +2,9 @@ import asyncio
 import random
 from . import *
 from collections import deque
+from . import ultroid_cmd
 
 DEFAULTUSER = "ULTROID"
-
 
 
 
