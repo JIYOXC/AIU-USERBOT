@@ -9,8 +9,8 @@ DEFAULTUSER = "ULTROID"
 
 
 @ultroid_cmd(pattern="dino")
-async def _(event):
-    typew = await edit_or_reply(event, "`DIN DINNN.....`")
+async def _(e):
+    typew = await e.eor("`DIN DINNN.....`")
     await asyncio.sleep(1)
     await typew.edit("`DINOOOOSAURUSSSSS!!`")
     await asyncio.sleep(1)
