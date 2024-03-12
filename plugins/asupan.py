@@ -10,7 +10,7 @@ from . import ultroid_cmd
 
 @ultroid_cmd(pattern="asupan$")
 async def _(event):
-    xx = await edit_or_reply(event, "`🔍Tunggu Sebentar...`")
+    xx = await reply(event, "`🔍Tunggu Sebentar...`")
     try:
         asupannya = [
             asupan
