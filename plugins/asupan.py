@@ -6,11 +6,11 @@
 from secrets import choice
 import asyncio
 from telethon.tl.types import InputMessagesFilterVideo, InputMessagesFilterVoice
-from . import ultroid.cmd
+from . import ultroid_cmd
 
 @ultroid_cmd(pattern="asupan$")
 async def _(event):
-    xx = await edit_or_reply(event, "`Tunggu Sebentar...`")
+    xx = await edit_or_reply(event, "`🔍Tunggu Sebentar...`")
     try:
         asupannya = [
             asupan
