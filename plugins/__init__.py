@@ -19,6 +19,7 @@ from pyUltroid._misc._assistant import asst_cmd, callback, in_pattern
 from pyUltroid._misc._decorators import ultroid_cmd
 from pyUltroid._misc._wrappers import eod, eor
 from pyUltroid.dB import DEVLIST, ULTROID_IMAGES
+from pyUltroid.fns.custom_markdown import CustomMarkdown
 from pyUltroid.fns.helper import *
 from pyUltroid.fns.misc import *
 from pyUltroid.fns.tools import *
@@ -39,6 +40,7 @@ asst: UltroidClient
 
 LOG_CHANNEL = udB.get_key("LOG_CHANNEL")
 
+ultroid_bot.parse_mode = CustomMarkdown()
 
 def inline_pic():
     INLINE_PIC = udB.get_key("INLINE_PIC")
