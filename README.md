@@ -1,8 +1,9 @@
+----
 <p align="center">
   <img src="https://github.com/JIYOXC/AIU-USERBOT/blob/main/resources/extras/logo_readme.jpg" alt="TeamUltroid Logo">
 </p>
 <h1 align="center">
-  <b>♨️AIU - USERBOT♨️</b>
+  <b>💠ᴀɪᴜ ꭙ ᴜꜱᴇʀʙᴏᴛ💠</b>
 </h1>
 
 <b>A stable pluggable Telegram userbot + Voice & Video Call music bot, based on Telethon.</b>
@@ -20,16 +21,16 @@
 ----
 
 
-♨️ Tutorial to get Redis URL and password - [here.](./resources/extras/redistut.md)
+💠 Tutorial to get Redis URL and password - [here.](./resources/extras/redistut.md)
 ---
 
 <h3 align="center">
-    ♨️「 ᴅᴇᴩʟᴏʏ ᴏɴ ʜᴇʀᴏᴋᴜ 」♨️
+    💠「 ᴅᴇᴩʟᴏʏ ᴏɴ ʜᴇʀᴏᴋᴜ 」💠
 </h3>
 
 <p align="center"><a href="https://dashboard.heroku.com/new?template=https://github.com/JIYOXC/AIU-USERBOT"> <img src="https://img.shields.io/badge/Deploy%20On%20Heroku-black?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
-
-♨️ VPS DEPLOY 
+----
+💠 VPS DEPLOY 
 - Get your [Necessary Variables](https://github.com/JIYOXC/AIU-USERBOT/blob/main/.env.sample)
 
 - Clone the repository:    
@@ -70,7 +71,7 @@
 • `Ctrl+a and Ctrl+d`
 
 ---
-♨️ Termux Session Gen
+💠 Termux Session Gen
 
 `apt update && apt upgrade -y && apt install python wget -y && pip install Telethon && wget https://raw.githubusercontent.com/TeamUltroid/Ultroid/dev/resources/session/ssgen.py && python ssgen.py`
 
@@ -88,4 +89,5 @@ Ultroid is licensed under [GNU Affero General Public License](https://www.gnu.or
 * [Lonami](https://github.com/LonamiWebs/) for [Telethon.](https://github.com/LonamiWebs/Telethon)
 * [MarshalX](https://github.com/MarshalX) for [PyTgCalls.](https://github.com/MarshalX/tgcalls)
 
-> Made with 💕 by [AIU-USERBOT](https://t.me/aiusupportt).    
+> Made with 💠 by [AIU-USERBOT](https://t.me/aiusupportt).    
+----
