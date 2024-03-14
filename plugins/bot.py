@@ -310,7 +310,7 @@ async def inline_alive(ult):
                     await builder.document(
                         pic,
                         title="Inline Alive",
-                        description="@aiusupportt",
+                        description="@AIUSUPPORTT",
                         parse_mode="html",
                         buttons=buttons,
                     )
