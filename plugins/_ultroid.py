@@ -14,16 +14,16 @@ from telethon.errors import (
 from . import LOG_CHANNEL, LOGS, Button, asst, eor, get_string, ultroid_cmd
 
 REPOMSG = """
-• **ULTROID USERBOT** •\n
+• **AIU-USERBOT USERBOT** •\n
 • Repo - [Click Here](https://github.com/JIYOXC/AIU-USERBOT)
-• Addons - [Click Here](https://github.com/TeamUltroid/UltroidAddons)
-• Support - @UltroidSupportChat
+• Addons - [Click Here](https://github.com/JIYOXC/AIUADDONS)
+• Support - @AIUSUPPORTT
 """
 
 RP_BUTTONS = [
     [
         Button.url(get_string("bot_3"), "https://github.com/JIYOXC/AIU-USERBOT"),
-        Button.url("Addons", "https://github.com/TeamUltroid/UltroidAddons"),
+        Button.url("Addons", "https://github.com/JIYOXC/AIUADDONS"),
     ],
     [Button.url("Support Group", "t.me/AIUSUPPORTT")],
 ]
