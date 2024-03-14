@@ -205,7 +205,7 @@ async def _(event):
     elif prem == "s":
         await x.reply(get_string("iping").format(end, uptime, f"{ment}"))
     else:
-        await x.edit(get_string("ping").format(end, uptime))
+        await x.edit(get_string("ping").format(end, uptime, f"{ment}"))
       
 @ultroid_cmd(
     pattern="cmds$",
