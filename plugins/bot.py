@@ -208,6 +208,15 @@ async def _(event):
     else:
         await x.edit(get_string("ping").format(end, uptime, f"{ment}"))
       
+@ultroid_cmd(pattern="kping", chats=[], type=["official", "assistant"])
+async def _(event):
+    start = datetime.now()
+    end = datetime.now()
+    ms = (end - start).microseconds
+    pin = f"🌋Pɪɴɢ = {ms} microseconds"
+    await event.answer(pin, cache_time=0, alert=True)
+
+
 @ultroid_cmd(
     pattern="cmds$",
 )
