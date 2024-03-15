@@ -97,6 +97,7 @@ async def alive(event):
     pattern="alive( (.*)|$)",
 )
 async def lol(ult):
+    ultroid_bot.parse_mode = CustomMarkdown()
     match = ult.pattern_match.group(1).strip()
     inline = None
     if match in ["inline", "i"]:
