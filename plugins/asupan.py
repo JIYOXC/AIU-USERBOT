@@ -6,7 +6,7 @@
 from secrets import choice
 from telethon.tl.types import InputMessagesFilterVideo, InputMessagesFilterVoice
 from telethon.tl.types import InputMessagesFilterPhotos
-from . import eor, ultroid_cmd
+from . import eor, ultroid_cmd, get_string
 
 
 
@@ -14,7 +14,7 @@ from . import eor, ultroid_cmd
 
 @ultroid_cmd(pattern="asupan$")
 async def _(event):
-    xx = await event.eor("🔍 Please wait...")
+    xx = await event.eor(get_string("asupan_1")
     try:
         asupannya = [
             asupan
