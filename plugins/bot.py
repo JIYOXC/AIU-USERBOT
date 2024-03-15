@@ -97,6 +97,7 @@ async def alive(event):
     pattern="alive( (.*)|$)",
 )
 async def lol(ult):
+    ultroid_bot.parse_mode = CustomMarkdown()
     match = ult.pattern_match.group(1).strip()
     inline = None
     if match in ["inline", "i"]:
@@ -132,7 +133,6 @@ async def lol(ult):
         if _e := udB.get_key("ALIVE_EMOJI"):
             als = als.replace("♨️", _e)
     else:
-        ultroid_bot.parse_mode = CustomMarkdown()
         als = (get_string("alive_1")).format(
             header,
             OWNER_NAME,
@@ -151,7 +151,6 @@ async def lol(ult):
             await ult.reply(
                 als,
                 file=pic,
-                parse_mode=parse,
                 link_preview=False,
                 buttons=buttons if inline else None,
             )
@@ -164,7 +163,6 @@ async def lol(ult):
                 await ult.reply(file=pic)
                 await ult.reply(
                     als,
-                    parse_mode=parse,
                     buttons=buttons if inline else None,
                     link_preview=False,
                 )
@@ -174,7 +172,6 @@ async def lol(ult):
     await eor(
         ult,
         als,
-        parse_mode=parse,
         link_preview=False,
         buttons=buttons if inline else None,
     )
