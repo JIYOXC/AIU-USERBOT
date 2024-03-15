@@ -85,8 +85,7 @@ alive_txt = """
   ♨️ Telethon - {}
 """
 
-in_alive = "{}\n\n♨️ <b>𝚂𝙷𝙰𝚁𝙸𝙽𝙶 Version -><b> <code>{}</code>\n♨️ <b>PyUltroid -></b> <code>{}</code>\n♨️ <b>Python -></b> <code>{}</code>\n♨️ <b>Uptime -></b> <code>{}</code>\n♨️ <b>Branch -></b>[ {} ]\n\n• <b>Join @aiusupport</b>"
-
+in_alive =  "**\n\n**{}**\n\n[💠](emoji/5971944878815317190)**ᴏᴡɴᴇʀ** - `{}`\n[💠](emoji/5971944878815317190)**ᴀɪᴜ** - `{}`\n[💠](emoji/5971944878815317190)**ᴘʏ-ᴀɪᴜ** - `{}`\n[💠](emoji/5971944878815317190)**ᴜᴘᴛɪᴍᴇ** - `{}`\n[💠](emoji/5971944878815317190)**ᴘʏᴛʜᴏɴ** - `{}`\n[💠](emoji/5971944878815317190)**ᴛᴇʟᴇᴛʜᴏɴ** - `{}`\n[💠](emoji/5971944878815317190)**ʙʀᴀɴᴄʜ - `{}`"
 
 @callback("alive")
 async def alive(event):
@@ -354,7 +353,7 @@ async def _(e):
         x = await asst.send_file(
             udB.get_key("LOG_CHANNEL"),
             ULTPIC(),
-            caption="• **Update Available** •",
+            caption="**[💠](emoji/5971944878815317190)**Update Available**[💠](emoji/5971944878815317190)",
             force_document=False,
             buttons=Button.inline("Changelogs", data="changes"),
         )
@@ -366,7 +365,7 @@ async def _(e):
         )
     else:
         await xx.edit(
-            f'<code>Your BOT is </code><strong>up-to-date</strong><code> with </code><strong><a href="https://github.com/JIYOXC/Ultroid/tree/{branch}">[{branch}]</a></strong>',
+            f'<code>Your BOT is </code><strong>up-to-date</strong><code> with </code><strong><a href="https://github.com/JIYOXC/AIU-USERBOT/tree/{branch}">[{branch}]</a></strong>',
             parse_mode="html",
             link_preview=False,
         )
