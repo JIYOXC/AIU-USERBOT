@@ -15,7 +15,7 @@ async def _(event):
         asupannya = [
             asupan
             async for asupan in event.client.iter_messages(
-                "@tedeasupancache", filter=InputMessagesFilterVideo
+                "@xcryasupan", filter=InputMessagesFilterVideo
             )
         ]
         await event.client.send_file(
@@ -23,5 +23,5 @@ async def _(event):
         )
         await xx.delete()
     except Exception:
-        await xx.edit("**Tidak bisa menemukan video asupan.**")
+        await xx.edit("**🔍Tunggu Sebentar...**")
 
