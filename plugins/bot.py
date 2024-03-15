@@ -97,7 +97,6 @@ async def alive(event):
     pattern="alive( (.*)|$)",
 )
 async def lol(ult):
-    ultroid_bot.parse_mode = CustomMarkdown()
     match = ult.pattern_match.group(1).strip()
     inline = None
     if match in ["inline", "i"]:
@@ -353,7 +352,7 @@ async def _(e):
         x = await asst.send_file(
             udB.get_key("LOG_CHANNEL"),
             ULTPIC(),
-            caption="**[💠](emoji/5971944878815317190)**Update Available**[💠](emoji/5971944878815317190)",
+            caption="💠**Update Available**💠",
             force_document=False,
             buttons=Button.inline("Changelogs", data="changes"),
         )
