@@ -14,7 +14,7 @@ from . import eor, ultroid_cmd, get_string
 
 @ultroid_cmd(pattern="asupan$")
 async def _(event):
-    xx = await event.eor(get_string("asupan_1")
+    xx = await event.eor(get_string("asupan_1"))
     try:
         asupannya = [
             asupan
@@ -31,7 +31,7 @@ async def _(event):
 
 @ultroid_cmd(pattern="pap$")
 async def _(event):
-    xx = await event.eor(get_string("asupan_1")
+    xx = await event.eor(get_string("asupan_1"))
     try:
         papnya = [
             pap
@@ -48,7 +48,7 @@ async def _(event):
 
 @ultroid_cmd(pattern="ppcp$")
 async def _(event):
-    xx = await event.eor(get_string("asupan_1")
+    xx = await event.eor(get_string("asupan_1"))
     try:
         ppcpnya = [
             ppcp
