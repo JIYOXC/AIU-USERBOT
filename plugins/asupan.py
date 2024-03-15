@@ -13,7 +13,7 @@ from . import eor, ultroid_cmd
 
 @ultroid_cmd(pattern="asupan$")
 async def _(event):
-    xx = await event.eor("bot_1")
+    xx = await event.eor("🔍 Please wait...")
     try:
         asupannya = [
             asupan
