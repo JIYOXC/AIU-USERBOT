@@ -5,6 +5,7 @@
 
 from secrets import choice
 from telethon.tl.types import InputMessagesFilterVideo, InputMessagesFilterVoice
+from telethon.tl.types import InputMessagesFilterPhotos
 from . import eor, ultroid_cmd
 
 
@@ -32,14 +33,14 @@ async def _(event):
 async def _(event):
     xx = await event.eor("🔍 Please wait...")
     try:
-        asupannya = [
-            asupan
-            async for asupan in event.client.iter_messages(
-                "@mm_kyran", filter=InputMessagesFilterVideo
+        papnya = [
+            pap
+            async for pap in event.client.iter_messages(
+                "@CeweLogoPack", filter=InputMessagesFilterPhotos
             )
         ]
         await event.client.send_file(
-            event.chat_id, file=choice(asupannya), reply_to=event.reply_to_msg_id
+            event.chat_id, file=choice(papnya), reply_to=event.reply_to_msg_id
         )
         await xx.delete()
     except Exception:
@@ -49,14 +50,14 @@ async def _(event):
 async def _(event):
     xx = await event.eor("🔍 Please wait...")
     try:
-        asupannya = [
-            asupan
-            async for asupan in event.client.iter_messages(
-                "@ppcpcilik", filter=InputMessagesFilterVideo
+        ppcpnya = [
+            ppcp
+            async for ppcp in event.client.iter_messages(
+                "@ppcpcilik", filter=InputMessagesFilterPhotos
             )
         ]
         await event.client.send_file(
-            event.chat_id, file=choice(asupannya), reply_to=event.reply_to_msg_id
+            event.chat_id, file=choice(ppcpnya), reply_to=event.reply_to_msg_id
         )
         await xx.delete()
     except Exception:
