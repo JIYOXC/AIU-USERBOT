@@ -651,4 +651,4 @@ help_warn: "\n\n•`{i}warn <reply to user> <reason>`\n    Gives Warn.\n\n•`{i
 help_webupload: " -\n\n• `{i}webupload`\n    Upload files on another server.\n"
 help_words: " -\n\n• `{i}meaning <word>`\n    Get the meaning of the word.\n\n• `{i}synonym <word>`\n    Get all synonyms.\n\n• `{i}antonym <word>`\n    Get all antonyms.\n\n• `{i}ud <word>`\n    Fetch word defenition from urbandictionary.\n"
 help_ziptools: "\n\n• `{i}zip <reply to file>`\n    zip the replied file\n    To set password on zip: `{i}zip <password>` reply to file\n\n• `{i}unzip <reply to zip file>`\n    unzip the replied file.\n\n• `{i}azip <reply to file>`\n   add file to batch for batch upload zip\n\n• `{i}dozip`\n   upload batch zip the files u added from `{i}azip`\n   To set Password: `{i}dozip <password>`\n\n"
-help_asupan: "\n\n[💠](emoji/5971944878815317190)**`{i}asupan` To search for random intake."
+help_asupan: "\n\n[💠](emoji/5971944878815317190)`{i}asupan` .\n\nTo send pp couple randomly.[💠](emoji/5971944878815317190)`{i}pap To send pap randomly.\n\n[💠](emoji/5971944878815317190)`{i}ppcp To send PP couples randomly."
