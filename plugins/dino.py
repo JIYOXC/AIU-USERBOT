@@ -112,7 +112,7 @@ async def _(e):
       
 @ultroid_cmd(pattern="santet")
 async def _(e):
-    typew = await e.eor(event, "`Mengaktifkan Perintah Santet Online....`")
+    typew = await e.eor("`Mengaktifkan Perintah Santet Online....`")
     await asyncio.sleep(2)
     await typew.edit("`Mencari Nama Orang Ini...`")
     await asyncio.sleep(1)
