@@ -31,7 +31,7 @@ async def _(event):
 
 @ultroid_cmd(pattern="pap$")
 async def _(event):
-    xx = await event.eor("🔍 Please wait...")
+    xx = await event.eor(get_string("asupan_1")
     try:
         papnya = [
             pap
@@ -44,11 +44,11 @@ async def _(event):
         )
         await xx.delete()
     except Exception:
-        await xx.edit("**Tidak bisa pap.**")
+        await xx.edit("**Tidak bisa menemukan pap.**")
 
 @ultroid_cmd(pattern="ppcp$")
 async def _(event):
-    xx = await event.eor("🔍 Please wait...")
+    xx = await event.eor(get_string("asupan_1")
     try:
         ppcpnya = [
             ppcp
