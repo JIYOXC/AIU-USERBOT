@@ -144,18 +144,16 @@ async def setting(event):
         link_preview=False,
         buttons=[
             [
-                Button.inline("•Pɪɴɢ•", data="pkng"),
-                Button.inline("•Uᴘᴛɪᴍᴇ•", data="upp"),
-            ],
-            [
-                Button.inline("•Stats•", data="alive"),
-                Button.inline("•Uᴘᴅᴀᴛᴇ•", data="doupdate"),
-            ],
+                Button.url(get_string("help_5"), url=f"https://t.me/aiu_ubot?start"),
+    ],
+    [
+        Button.url(get_string("help_6"), url=f"https://t.me/Darmik_bot?start"),
+        Button.url(get_string("help_7"), url=f"https://t.me/v1tedeubot?start"),
+    ],
             [Button.inline("« Bᴀᴄᴋ", data="open")],
         ],
     )
-
-
+    
 _strings = {"Official": helps, "Addons": zhelps, "VCBot": get_string("inline_6")}
 
 
