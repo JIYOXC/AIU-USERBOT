@@ -28,7 +28,7 @@ _main_help_menu = [
         #Button.url(get_string("help_7"), url=f"https://t.me/v1tedeubot?start"),
     ],
     [
-        Button.url(get_string("help_8"), url=f"https://t.me/+aj797rJztU4xMDk1"),
+        Button.url(get_string("help_7"), url=f"https://t.me/+aj797rJztU4xMDk1"),
         Button.url(get_string("help_9"), url=f"https://t.me/AlterBaseChat"),
     ],
     [Button.inline(get_string("help_10"), data="close")],
