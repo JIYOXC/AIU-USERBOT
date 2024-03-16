@@ -20,11 +20,12 @@ from . import HNDLR, LOGS, OWNER_NAME, asst, get_string, inline_pic, udB, ultroi
 _main_help_menu = [
     [
         Button.inline(get_string("help_4"), data="uh_Official_"),
-        Button.url(get_string("help_5"), url=f"https://t.me/aiu_ubot?start"),
+        #Button.url(get_string("help_5"), url=f"https://t.me/aiu_ubot?start"),
     ],
     [
-        Button.url(get_string("help_6"), url=f"https://t.me/Darmik_bot?start"),
-        Button.url(get_string("help_7"), url=f"https://t.me/v1tedeubot?start"),
+        Button.inline(get_string("help_8"), data="ownr"),
+        #Button.url(get_string("help_6"), url=f"https://t.me/Darmik_bot?start"),
+        #Button.url(get_string("help_7"), url=f"https://t.me/v1tedeubot?start"),
     ],
     [
         Button.url(get_string("help_8"), url=f"https://t.me/+aj797rJztU4xMDk1"),
