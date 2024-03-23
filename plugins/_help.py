@@ -23,7 +23,7 @@ _main_help_menu = [
         #Button.url(get_string("help_5"), url=f"https://t.me/aiu_ubot?start"),
     ],
     [
-        Button.url(get_string("help_88"), url=f"https://t.me/AIUXMUSICBOT?start"),
+        #Button.url(get_string("help_88"), url=f"https://t.me/AIUXMUSICBOT?start"),
     ],
     [
         Button.inline(get_string("help_8"), data="ownr"),
@@ -35,7 +35,7 @@ _main_help_menu = [
         #Button.url(get_string("help_9"), url=f"https://t.me/AlterBaseChat"),
     ],
     [
-        Button.inline(get_string("help_10"), data="close")],
+        #Button.inline(get_string("help_10"), data="close")],
 ]
 
 
