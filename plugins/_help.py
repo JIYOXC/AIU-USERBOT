@@ -17,9 +17,9 @@ from pyUltroid.fns.tools import cmd_regex_replace
 
 from . import HNDLR, LOGS, OWNER_NAME, asst, get_string, inline_pic, udB, ultroid_cmd
 
-#_main_help_menu = [
+_main_help_menu = [
     [
-       # Button.inline(get_string("help_4"), data="uh_Official_"),
+        Button.inline(get_string("help_4"), data="uh_Official_"),
         #Button.url(get_string("help_5"), url=f"https://t.me/aiu_ubot?start"),
     ],
     [
