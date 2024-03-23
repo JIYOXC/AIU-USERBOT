@@ -17,24 +17,24 @@ from pyUltroid.fns.tools import cmd_regex_replace
 
 from . import HNDLR, LOGS, OWNER_NAME, asst, get_string, inline_pic, udB, ultroid_cmd
 
-_main_help_menu = [
+#_main_help_menu = [
     [
-        Button.inline(get_string("help_4"), data="uh_Official_"),
+       # Button.inline(get_string("help_4"), data="uh_Official_"),
         #Button.url(get_string("help_5"), url=f"https://t.me/aiu_ubot?start"),
     ],
     [
-        Button.url(get_string("help_88"), url=f"https://t.me/AIUXMUSICBOT?start"),
+        #Button.url(get_string("help_88"), url=f"https://t.me/AIUXMUSICBOT?start"),
     ],
     [
-        Button.inline(get_string("help_8"), data="ownr"),
+        #Button.inline(get_string("help_8"), data="ownr"),
         #Button.url(get_string("help_6"), url=f"https://t.me/Darmik_bot?start"),
         #Button.url(get_string("help_7"), url=f"https://t.me/v1tedeubot?start"),
     ],
     [
-        Button.url(get_string("help_7"), url=f"https://t.me/+aj797rJztU4xMDk1"),
-        Button.url(get_string("help_9"), url=f"https://t.me/AlterBaseChat"),
+        #Button.url(get_string("help_7"), url=f"https://t.me/+aj797rJztU4xMDk1"),
+        #Button.url(get_string("help_9"), url=f"https://t.me/AlterBaseChat"),
     ],
-    [Button.inline(get_string("help_10"), data="close")],
+    [#Button.inline(get_string("help_10"), data="close")],
 ]
 
 
