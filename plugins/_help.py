@@ -26,7 +26,7 @@ _main_help_menu = [
         #Button.url(get_string("help_88"), url=f"https://t.me/AIUXMUSICBOT?start"),
     ],
     [
-        Button.inline(get_string("help_8"), data="ownr"),
+        #Button.inline(get_string("help_8"), data="ownr"),
         #Button.url(get_string("help_6"), url=f"https://t.me/Darmik_bot?start"),
         #Button.url(get_string("help_7"), url=f"https://t.me/v1tedeubot?start"),
     ],
