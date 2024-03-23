@@ -35,7 +35,7 @@ _main_help_menu = [
         #Button.url(get_string("help_9"), url=f"https://t.me/AlterBaseChat"),
     ],
     [
-        #Button.inline(get_string("help_10"), data="close")],
+        Button.inline(get_string("help_10"), data="close")],
 ]
 
 
