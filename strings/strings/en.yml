@@ -165,7 +165,7 @@ wspr_5: "You Can't do this"
 afk_1: "**No Longer Afk**\n\nWas away for ~ `{}`"
 afk_2: "#AFK\nSet AFK mode to False.\nWas AFK since ~ `{}`"
 afk_3: "**I'm currently AFK.**\nLast seen `{}` ago.\n\n**Reason:** `{}`"
-aqiytfk_4: "**I'm currently AFK.**\n\nLast seen `{}` ago."
+afk_4: "**I'm currently AFK.**\n\nLast seen `{}` ago."
 afk_5: "**I'm Going AFK.**\n\n**Reason:** `{}`"
 afk_6: "**I'm Going AFK.**"
 
