@@ -128,7 +128,7 @@ async def _(event):
     await event.answer([result])
 
 
-@callback("ownr", owner=True)
+@callback("ownr", owner=False)
 async def setting(event):
     z = []
     for x in LIST.values():
