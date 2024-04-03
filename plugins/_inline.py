@@ -147,8 +147,8 @@ async def setting(event):
                 Button.url(get_string("help_5"), url=f"https://t.me/aiu_ubot?start"),
     ],
     [
-        Button.url(get_string("help_6"), url=f"https://t.me/Darmik_bot?start"),
-        Button.url(get_string("help_77"), url=f"https://t.me/v1tedeubot?start"),
+        Button.url(get_string("help_6"), url=f"https://t.me/MIKO_USERBOT?start"),
+        Button.url(get_string("help_77"), url=f"https://t.me/AIUXROBOT?start"),
     ],
             [Button.inline("« Bᴀᴄᴋ", data="open")],
         ],
