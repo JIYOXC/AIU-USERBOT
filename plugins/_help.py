@@ -23,7 +23,7 @@ _main_help_menu = [
         #Button.url(get_string("help_5"), url=f"https://t.me/aiu_ubot?start"),
     ],
     [
-        #Button.url(get_string("help_88"), url=f"https://t.me/jualnoktell"),
+        Button.url(get_string("help_88"), url=f"https://t.me/jualnoktell"),
     ],
     [
         Button.inline(get_string("help_8"), data="ownr"),
