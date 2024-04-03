@@ -144,11 +144,11 @@ async def setting(event):
         link_preview=False,
         buttons=[
             [
-                Button.url(get_string("help_5"), url=f"https://t.me/aiu_ubot?start"),
+                Button.url(get_string("help_77"), url=f"https://t.me/AIUXROBOT?start"),
     ],
     [
         Button.url(get_string("help_6"), url=f"https://t.me/MIKO_USERBOT?start"),
-        Button.url(get_string("help_77"), url=f"https://t.me/AIUXROBOT?start"),
+        Button.url(get_string("help_5"), url=f"https://t.me/AIU_UBOT?start"),
     ],
             [Button.inline("« Bᴀᴄᴋ", data="open")],
         ],
