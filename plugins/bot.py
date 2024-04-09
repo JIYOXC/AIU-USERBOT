@@ -199,6 +199,12 @@ async def _(event):
     x = await event.eor("ping")
     end = round((time.time() - start) * 1000)
     uptime = time_formatter((time.time() - start_time) * 1000)
+    if pic:
+        try:
+            await ult.reply(
+                als,
+                file=pic,
+            )
     if prem == "x":
         await x.reply(get_string("pping").format(end, uptime))
     elif prem == "s":
