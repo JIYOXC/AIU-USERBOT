@@ -192,6 +192,9 @@ async def _(event):
     user_id = OWNER_ID
     ment = await mention_user(user_id)
     prem = event.pattern_match.group(1)
+    pic = udB.get_key("ALIVE_PIC")
+    if isinstance(pic, list):
+        pic = choice(pic)
     start = time.time()
     x = await event.eor("ping")
     end = round((time.time() - start) * 1000)
