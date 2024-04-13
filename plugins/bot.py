@@ -201,7 +201,9 @@ async def _(event):
     elif prem == "s":
         await x.reply(get_string("iping").format(end, uptime, f"{ment}"))
     else:
-        await x.edit(get_string("ping").format(end, uptime, f"{ment}"))
+        file = "ping.jpg"
+        await x.delete()
+        await event.respond(get_string("ping").format(end, uptime, f"{ment}"), file=file)
       
 @ultroid_cmd(pattern="kping", chats=[], type=["official", "assistant"])
 async def _(event):
