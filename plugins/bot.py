@@ -9,6 +9,7 @@ from . import get_help
 
 __doc__ = get_help("help_bot")
 
+import asyncio
 import os
 import sys
 import time
@@ -202,6 +203,7 @@ async def _(event):
         await x.reply(get_string("iping").format(end, uptime, f"{ment}"))
     else:
         file = "ping.jpg"
+        await asyncio.sleep(1)
         await x.delete()
         await event.respond(get_string("ping").format(end, uptime, f"{ment}"), file=file)
       
