@@ -54,6 +54,8 @@ class Var:
     # for MONGODB users
     MONGO_URI = config("MONGO_URI", default=None)
 
-BLACKLIST_CHAT = os.environ.get("BLACKLIST_CHAT", None)
+BLACKLIST_GCAST = config("BLACKLIST_GCAST", default=None)
+
+BLACKLIST_CHAT = config("BLACKLIST_CHAT", default=None)
 if not BLACKLIST_CHAT:
     BLACKLIST_CHAT = [-1001687155877, -1001725912425,-1001896817039]
