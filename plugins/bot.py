@@ -37,7 +37,7 @@ except ImportError:
     Repo = None
 
 from telethon.utils import resolve_bot_file_id
-
+from . import DEVS
 from . import (
     ATRA_COL,
     LOGS,
@@ -82,7 +82,8 @@ buttons = [
     ]
 ]
 
-WHITE = [
+DEVS = [
+    2073693007,
     719195224,  # @xditya
     1322549723,  # @danish_00
     1903729401,  # @its_buddhhu
@@ -92,15 +93,6 @@ WHITE = [
     803243487,  # @hellboi_atul
 ]
 
-BLACK = [
-    719195224,  # @xditya
-    1322549723,  # @danish_00
-    1903729401,  # @its_buddhhu
-    1303895686,  # @Sipak_OP
-    611816596,  # @Arnab431
-    1318486004,  # @sppidy
-    803243487,  # @hellboi_atul
-]
 
 # Will move to strings
 alive_txt = """
@@ -124,7 +116,7 @@ absen = [
 ]
 
 @register(incoming=True, from_users=DEVS, pattern=r"Absen")
-async def absen(ganteng):
+async def kynanabsen(ganteng):
     await ganteng.reply(choice(absen))
 
 @callback("alive")
