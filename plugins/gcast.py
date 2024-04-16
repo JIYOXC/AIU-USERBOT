@@ -14,6 +14,7 @@ import asyncio
 import os
 
 import heroku3
+from requests import get
 from telethon.errors import FloodWaitError
 from pyUltroid.configs import BLACKLIST_GCAST
 #from pyUltroid.dB.blacklist_db import BLACKLIST_DB
