@@ -19,7 +19,7 @@ from telethon.errors import FloodWaitError
 from pyUltroid.configs import BLACKLIST_GCAST
 #from pyUltroid.dB.blacklist_db import BLACKLIST_DB
 from pyUltroid.dB.base import KeyManager
-from . import get_help, HEROKU_API_KEY, HEROKU_APP_NAME
+#from . import get_help, HEROKU_API_KEY, HEROKU_APP_NAME
 from . import HNDLR, LOGS, eor, get_string, udB, ultroid_bot, ultroid_cmd
 KeyM = KeyManager("BROADCAST", cast=list)
 from . import GCAST_BLACKLIST
