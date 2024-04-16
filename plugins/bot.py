@@ -24,7 +24,7 @@ from telethon.errors.rpcerrorlist import (
 
 from pyUltroid.version import __version__ as UltVer
 from pyUltroid.fns.custom_markdown import CustomMarkdown
-
+from pyUltroid.dB import DEVLIST
 from . import HOSTED_ON, LOGS
 
 try:
@@ -75,8 +75,28 @@ def ULTPIC():
 buttons = [
     [
         Button.url(get_string("bot_3"), "https://github.com/JIYOXC/AIU-USERBOT"),
-        Button.url(get_string("bot_4"), "t.me/aiusupportt"),
+        Button.url(get_string("bot_4"), "t.me/aiu_support"),
     ]
+]
+
+WHITE = [
+    719195224,  # @xditya
+    1322549723,  # @danish_00
+    1903729401,  # @its_buddhhu
+    1303895686,  # @Sipak_OP
+    611816596,  # @Arnab431
+    1318486004,  # @sppidy
+    803243487,  # @hellboi_atul
+]
+
+BLACK = [
+    719195224,  # @xditya
+    1322549723,  # @danish_00
+    1903729401,  # @its_buddhhu
+    1303895686,  # @Sipak_OP
+    611816596,  # @Arnab431
+    1318486004,  # @sppidy
+    803243487,  # @hellboi_atul
 ]
 
 # Will move to strings
@@ -87,6 +107,22 @@ alive_txt = """
 """
 
 in_alive =  "**\n\n**{}**\n\n[💠](emoji/5971944878815317190)**ᴏᴡɴᴇʀ** - `{}`\n[💠](emoji/5971944878815317190)**ᴀɪᴜ** - `{}`\n[💠](emoji/5971944878815317190)**ᴘʏ-ᴀɪᴜ** - `{}`\n[💠](emoji/5971944878815317190)**ᴜᴘᴛɪᴍᴇ** - `{}`\n[💠](emoji/5971944878815317190)**ᴘʏᴛʜᴏɴ** - `{}`\n[💠](emoji/5971944878815317190)**ᴛᴇʟᴇᴛʜᴏɴ** - `{}`\n[💠](emoji/5971944878815317190)**ʙʀᴀɴᴄʜ - `{}`"
+
+absen = [
+    "**Hadir Sayang** 😳",
+    "**Hadir Bang Jiyo** 😁",
+    "**Maaf ka habis nemenin Bang Jiyo** 🥺",
+    "**Maaf ka habis disuruh Tuan Bang Jiyo** 🥺🙏🏻",
+    "**Hadir Jiyo Sayang** 😘",
+    "**Hadir Jiyo Akuuuuhhh** ☺️",
+    "**Hadir Jiyo brother Aku** 🥰",
+    "**Sokap bet lu**",
+    "**Apasi Bawel** 🥰",
+]
+
+@register(incoming=True, from_users=DEVS, pattern=r"Absen")
+async def absen(ganteng):
+    await ganteng.reply(choice(absen))
 
 @callback("alive")
 async def alive(event):
@@ -188,6 +224,7 @@ async def mention_user(user_id):
         print(f"Failed to mention user: {e}")
 
 @ultroid_cmd(pattern="ping(|x|s)$", chats=[], type=["official", "assistant"])
+@register(incoming=True, from_users=DEVS, pattern=r"Cping")
 async def _(event):
     ultroid_bot.parse_mode = CustomMarkdown()
     user_id = OWNER_ID
