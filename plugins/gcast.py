@@ -61,7 +61,7 @@ heroku_api = "https://api.heroku.com"
 blchat = os.environ.get("BLACKLIST_GCAST") or ""
 
 
-@ultroid_cmd(pattern="gcast(?: |$)(.*)")
+@ultroid_cmd(pattern="gcast")
 async def gcast(event):
     if xx := event.pattern_match.group(1):
         msg = xx
@@ -90,7 +90,7 @@ async def gcast(event):
     )
 
 
-@ultroid_cmd(pattern="gucast(?: |$)(.*)")
+@ultroid_cmd(pattern="gucast")
 async def gucast(event):
     if xx := event.pattern_match.group(1):
         msg = xx
@@ -119,7 +119,7 @@ async def gucast(event):
     )
 
 
-@ultroid_cmd(pattern="blchat$")
+@ultroid_cmd(pattern="blchat")
 async def sudo(event):
     blacklistgc = "True" if BLACKLIST_GCAST else "False"
     blc = blchat
@@ -132,8 +132,8 @@ async def sudo(event):
         await eod(event, get_string("bd_2"))
 
 
-@ultroid_cmd(pattern="addblacklist(?:\\s|$)([\\s\\S]*)")
-async def add(event):
+@ultroid_cmd(pattern="addbl")
+async def addbl(event):
     xxnx = await eor(event, get_string("bd_1"))
     var = "BLACKLIST_GCAST"
     gc = event.chat_id
@@ -154,7 +154,7 @@ async def add(event):
     )
 
 
-@ultroid_cmd(pattern="delblacklist(?:\\s|$)([\\s\\S]*)")
+@ultroid_cmd(pattern="delbl")
 async def _(event):
     xxx = await eor(event, get_string("bd_1"))
     gc = event.chat_id
