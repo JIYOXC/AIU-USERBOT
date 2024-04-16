@@ -145,3 +145,35 @@ ATRA_COL = [
     "Moccasin",
     "PowderBlue",
 ]
+
+GCAST_BLACKLIST = [
+    -1001675396283,  # AyiinXdSupport
+    -1001473548283,  # SharingUserbot
+    -1001433238829,  # TedeSupport
+    -1001476936696,  # AnosSupport
+    -1001327032795,  # UltroidSupport
+    -1001294181499,  # UserBotIndo
+    -1001419516987,  # VeezSupportGroup
+    -1001459812644,  # GeezSupportGroup
+    -1001296934585,  # X-PROJECT BOT
+    -1001481357570,  # UsergeOnTopic
+    -1001459701099,  # CatUserbotSupport
+    -1001109837870,  # TelegramBotIndonesia
+    -1001752592753,  # Skyzusupport
+    -1001788983303,  # KayzuSupport
+    -1001380293847,  # NastySupport
+    -1001267233272,  # PocongUserbot
+    -1001500063792,  # Trident
+    -1001687155877,  # CilikSupport
+    -1001662510083,  # MutualanDestra
+    -1001347414136,  # ArunaMutualan
+    -1001726206158,  # Nandesupport
+    -1001608701614,  # Uputtsupport
+    -1001578091827,  # PrimeSupport
+    -1001599474353,  # HimikoSupport
+    -1001287188817,  # KazuSupportGrp
+    -1001302879778,  # KarmanSupport
+    -1001638078842,  # RuangDiskusi
+    -1001692751821,  # Geez|RAM Support
+    -1001812143750,  # KynanSupport
+]
