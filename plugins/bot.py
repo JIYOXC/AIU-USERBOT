@@ -114,9 +114,6 @@ absen = [
     "**Apasi Bawel** 🥰",
 ]
 
-@register(incoming=True, from_users=DEVS, pattern=r"Absen")
-async def kynanabsen(ganteng):
-    await ganteng.reply(choice(absen))
 
 @callback("alive")
 async def alive(event):
