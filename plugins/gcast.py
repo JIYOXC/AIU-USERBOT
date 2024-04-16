@@ -137,13 +137,9 @@ async def add(event):
     xxnx = await eor(event, get_string("bd_1"))
     var = "BLACKLIST_GCAST"
     gc = event.chat_id
-    else:
         await eod(
             xxnx, get_string("bd_1").format("menambahkan")
         )
-        return
-    heroku_Config = app.config()
-    if event is None:
         return
     blgc = f"{BLACKLIST_GCAST} {gc}"
     blacklistgrup = (
@@ -156,20 +152,15 @@ async def add(event):
     )
     await xxnx.edit(get_string("bd_2").format(gc)
     )
-    heroku_Config[var] = blacklistgrup
 
 
 @ultroid_cmd(pattern="delblacklist(?:\\s|$)([\\s\\S]*)")
 async def _(event):
     xxx = await eor(event, get_string("bd_1"))
     gc = event.chat_id
-    else:
         await eod(
             xxx, get_string("bd_1").format("menghapus")
         )
-        return
-    heroku_Config = app.config()
-    if event is None:
         return
     gett = str(gc)
     if gett in blchat:
@@ -177,7 +168,6 @@ async def _(event):
         await xxx.edit(get_string("bd_1").format(gc)
         )
         var = "BLACKLIST_GCAST"
-        heroku_Config[var] = blacklistgrup
     else:
         await eod(xxx, get_string("bd_2"), time=45
         )
