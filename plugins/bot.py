@@ -37,7 +37,6 @@ except ImportError:
     Repo = None
 
 from telethon.utils import resolve_bot_file_id
-from . import DEVS
 from . import (
     ATRA_COL,
     LOGS,
