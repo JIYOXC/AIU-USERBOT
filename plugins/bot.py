@@ -21,7 +21,10 @@ from telethon.errors.rpcerrorlist import (
     BotMethodInvalidError,
     ChatSendMediaForbiddenError,
 )
-
+from telethon.events import NewMessage
+from telethon.tl.custom import Dialog
+from telethon.tl.functions import PingRequest
+from telethon.tl.types import Channel, Chat, User
 from pyUltroid.version import __version__ as UltVer
 from pyUltroid.fns.custom_markdown import CustomMarkdown
 from pyUltroid.dB import DEVLIST
