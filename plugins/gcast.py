@@ -21,6 +21,7 @@ from pyUltroid.dB.base import KeyManager
 from . import get_help, HEROKU_API_KEY, HEROKU_APP_NAME
 from . import HNDLR, LOGS, eor, get_string, udB, ultroid_bot, ultroid_cmd
 KeyM = KeyManager("BROADCAST", cast=list)
+from . import GCAST_BLACKLIST
 
 GCAST_BLACKLIST = [
     -1001675396283,  # AyiinXdSupport
