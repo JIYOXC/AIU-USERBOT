@@ -16,7 +16,7 @@ import os
 import heroku3
 from telethon.errors import FloodWaitError
 
-from pyUltroid.dB.blacklist_chat_db import BLACKLIST_GCAST
+from pyUltroid.dB.blacklist_chat_db import BLACKLIST_DB
 from pyUltroid.dB.base import KeyManager
 from . import get_help, HEROKU_API_KEY, HEROKU_APP_NAME
 from . import HNDLR, LOGS, eor, get_string, udB, ultroid_bot, ultroid_cmd
