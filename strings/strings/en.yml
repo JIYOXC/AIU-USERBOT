@@ -23,7 +23,7 @@ py_d7: "Conversation Is Already On, Kindly Wait Sometime Then Try Again."
 py_d8: "`Sending media or sticker is not allowed in this chat.`"
 
 # commons
-com_1: "`Processing...`"
+com_1: "**[⚡️](emoji/5456140674028019486)**"
 com_2: "`Searching...`"
 com_3: "`Invalid Input`"
 com_4: "`UnSupported Media..`"
