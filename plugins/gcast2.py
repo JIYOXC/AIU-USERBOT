@@ -7,8 +7,8 @@
 
 import asyncio
 
-from Ayra.dB import DEVS
-from Ayra.dB.gcast_blacklist_db import add_gblacklist, list_bl, rem_gblacklist
+from pyUltroid.dB import DEVS
+from pyUltroid.dB.gcast_blacklist_db import add_gblacklist, list_bl, rem_gblacklist
 from telethon.errors.rpcerrorlist import FloodWaitError
 
 from . import *
