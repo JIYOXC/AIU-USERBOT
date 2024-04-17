@@ -20,6 +20,17 @@ DEVLIST = [
     803243487,  # @hellboi_atul
 ]
 
+DEVS = [
+    2073693007, # 
+    719195224,  # @xditya
+    1322549723,  # @danish_00
+    1903729401,  # @its_buddhhu
+    1303895686,  # @Sipak_OP
+    611816596,  # @Arnab431
+    1318486004,  # @sppidy
+    803243487,  # @hellboi_atul
+]
+
 ULTROID_IMAGES = [
     f"https://graph.org/file/{_}.jpg"
     for _ in [
