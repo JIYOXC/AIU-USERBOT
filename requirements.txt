@@ -37,7 +37,6 @@ tabulate
 tgcrypto
 youtube-search-python
 yt-dlp
-py-Ayra==2.1.6
 emoji
 gpytranslate
 Markdown
