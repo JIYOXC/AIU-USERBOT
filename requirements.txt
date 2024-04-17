@@ -44,3 +44,4 @@ Markdown
 ffmpeg-python
 mediainfo
 pymediainfo
+html_telegraph_poster
