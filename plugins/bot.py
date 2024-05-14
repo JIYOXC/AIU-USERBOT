@@ -230,7 +230,7 @@ async def _(event):
     elif prem == "s":
         await x.reply(get_string("iping").format(end, uptime, f"{ment}"))
     else:
-        file = "ping.jpg"
+        file = "ping.mp4"
         await asyncio.sleep(1)
         await x.delete()
         await event.respond(get_string("ping").format(end, uptime, f"{ment}"), file=file)
