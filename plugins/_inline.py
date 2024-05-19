@@ -50,8 +50,8 @@ upage = 0
 
 SUP_BUTTONS = [
     [
-        Button.url("• Repo •", url="https://github.com/TeamUltroid/Ultroid"),
-        Button.url("• Support •", url="t.me/UltroidSupportChat"),
+        Button.url("• Repo •", url="https://github.com/JIYOXC/AIU-USERBOT"),
+        Button.url("• Support •", url="t.me/aiu_support"),
     ],
 ]
 
@@ -60,10 +60,10 @@ SUP_BUTTONS = [
 
 @in_pattern(owner=True, func=lambda x: not x.text)
 async def inline_alive(o):
-    TLINK = inline_pic() or "https://graph.org/file/74d6259983e0642923fdb.jpg"
-    MSG = "• **Ultroid Userbot •**"
+    TLINK = inline_pic() or "https://graph.org/file/f1dc435e6692fbe95c7e4.jpg"
+    MSG = "• **Aiu Userbot •**"
     WEB0 = InputWebDocument(
-        "https://graph.org/file/acd4f5d61369f74c5e7a7.jpg", 0, "image/jpg", []
+        "https://graph.org/file/f1dc435e6692fbe95c7e4.jpg", 0, "image/jpg", []
     )
     RES = [
         await o.builder.article(
@@ -87,7 +87,7 @@ async def inline_alive(o):
     )
 
 
-@in_pattern("ultd", owner=True)
+@in_pattern("ultd", owner=False)
 async def inline_handler(event):
     z = []
     for x in LIST.values():
@@ -130,7 +130,7 @@ async def _(event):
     await event.answer([result])
 
 
-@callback("ownr", owner=True)
+@callback("ownr", owner=False)
 async def setting(event):
     z = []
     for x in LIST.values():
@@ -175,7 +175,7 @@ async def help_func(ult):
     await ult.edit(text, buttons=page_num(count, key), link_preview=False)
 
 
-@callback(re.compile("uplugin_(.*)"), owner=True)
+@callback(re.compile("uplugin_(.*)"), owner=False)
 async def uptd_plugin(event):
     key, file = event.data_match.group(1).decode("utf-8").split("_")
     index = None
@@ -276,7 +276,7 @@ async def _(event):
     await event.answer(pin, cache_time=0, alert=True)
 
 
-@callback(data="inlone", owner=True)
+@callback(data="inlone", owner=False)
 async def _(e):
     _InButtons = [
         Button.switch_inline(_, query=InlinePlugin[_], same_peer=True)
@@ -293,7 +293,7 @@ async def _(e):
     await e.edit(buttons=button, link_preview=False)
 
 
-@callback(data="open", owner=True)
+@callback(data="open", owner=False)
 async def opner(event):
     z = []
     for x in LIST.values():
@@ -310,7 +310,7 @@ async def opner(event):
     )
 
 
-@callback(data="close", owner=True)
+@callback(data="close", owner=False)
 async def on_plug_in_callback_query_handler(event):
     await event.edit(
         get_string("inline_5"),
