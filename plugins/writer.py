@@ -17,16 +17,8 @@
 
 import os
 import subprocess
-try:
-    import PIL # max work version 9.5.0
-except:
-    mod_inst = subprocess.Popen("pip install Pillow==9.5.0", shell=True)
-    mod_inst.wait()
-    from PIL import Image, ImageDraw, ImageFont
-
+from PIL import Image, ImageDraw, ImageFont
 from htmlwebshot import WebShot
-
-
 from . import async_searcher, eod, get_string, text_set, ultroid_cmd
 
 
