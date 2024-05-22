@@ -26,7 +26,7 @@ lxml
 numpy>=1.21.2
 oauth2client
 opencv-python-headless
-pillow==9.5.0
+pillow
 profanitydetector
 psutil
 pypdf2>=1.26.0
