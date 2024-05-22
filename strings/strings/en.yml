@@ -562,7 +562,7 @@ pmbot_7: "`Congrats! You have been unbanned.`"
 # -------------------------- VcBot ------------------------------- #
 
 vcbot_1: "`Left the voice chat.`"
-vcbot_2: "**ERROR:**\n{}"
+vcbot_2: "ᴊᴏɪɴ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ"
 vcbot_3: "• Volume Changed to `{}%` •"
 vcbot_4: "`Please specify a volume from 1 to 200!`"
 vcbot_5: "`Re-joining this voice chat.`"
