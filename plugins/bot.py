@@ -228,7 +228,7 @@ async def _(event):
     if prem == "x":
         await x.reply(get_string("pping").format(end, uptime))
     elif prem == "s":
-        await x.reply(get_string("iping").format(end, uptime, f"{ment}"))
+        await x.reply(get_string("iping").format(end))
     else:
         file = "ping.mp4"
         await asyncio.sleep(1)
