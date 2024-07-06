@@ -1,6 +1,6 @@
 ----
 <p align="center">
-  <img src="httpsk://github.com/JIYOXC/AIU-USERBOT/blob/main/resources/extras/logo_readme.jpg" alt="TeamUltroid Logo">
+  <img src="https://github.com/JIYOXC/AIU-USERBOT/blob/main/resources/extras/inline.jpg" alt="TeamUltroid Logo">
 </p>
 <h1 align="center">
   <b>💠ᴀɪᴜ ꭙ ᴜꜱᴇʀʙᴏᴛ💠</b>
