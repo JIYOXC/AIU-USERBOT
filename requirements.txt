@@ -5,7 +5,6 @@ Pyrogram==2.0.106
 pytgcalls==3.0.0.dev24
 python-decouple==3.8
 python-dotenv==1.0.0
-py-Ultroid==2022.6.6
 heroku3==5.2.1
 akinator
 apscheduler
