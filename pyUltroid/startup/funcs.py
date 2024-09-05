@@ -247,8 +247,8 @@ async def autopilot():
         try:
             r = await ultroid_bot(
                 CreateChannelRequest(
-                    title="AIU-USERBOT Logs",
-                    about="My AIU Log Group\n\n Join @aiusupportt",
+                    title="AIU-USERBOT LOGS",
+                    about="MY AIU LOG GROUP\n\n JOIN @aiusupportt",
                     megagroup=True,
                 ),
             )
@@ -314,7 +314,7 @@ async def autopilot():
                 LOGS.exception(er)
     if isinstance(chat.photo, ChatPhotoEmpty):
         photo, _ = await download_file(
-            "https://graph.org/file/27c6812becf6f376cbb10.jpg", "channelphoto.jpg"
+            "resources/extras/ultroid_assistant.jpg", "channelphoto.jpg"
         )
         ll = await ultroid_bot.upload_file(photo)
         try:
