@@ -5,6 +5,7 @@ https://github.com/New-dev0/Telethon-Patch/archive/main.zip
 python-decouple
 python-dotenv
 pyrogram
+py-Ultroid==2022.6.6
 covid
 emoji
 fonttools
