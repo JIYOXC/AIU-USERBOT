@@ -5,8 +5,6 @@ https://github.com/New-dev0/Telethon-Patch/archive/main.zip
 python-decouple
 python-dotenv
 pyrogram==2.0.106
-pytgcalls==3.0.0.dev22
-py-tgcalls==1.2.2
 pillow==10.2.0
 covid
 emoji
