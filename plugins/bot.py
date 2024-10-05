@@ -233,7 +233,7 @@ async def _(event):
         file = "ping.mp4"
         await asyncio.sleep(1)
         await x.delete()
-        await event.respond(get_string("ping").format(end, uptime, f"{ment}"), file=file)
+        await event.respond(get_string("ping").format(end, uptime, f"{ment}"))
       
 @ultroid_cmd(pattern="kping", chats=[], type=["official", "assistant"])
 async def _(event):
