@@ -115,26 +115,3 @@ def load_other_plugins(addons=None, pmbot=None, manager=None, vcbot=None):
         # chat via assistant
         if pmbot:
             Loader(path="assistant/pmbot.py").load(log=False)
-
-    # vc bot
-    if vcbot and not vcClient._bot:
-        try:
-            import pytgcalls  # ignore: pylint
-
-            if os.path.exists("vcbot"):
-                if os.path.exists("vcbot/.git"):
-                    subprocess.run("cd vcbot && git pull", shell=True)
-                else:
-                    rmtree("vcbot")
-            if not os.path.exists("vcbot"):
-                subprocess.run(
-                    "git clone https://github.com/TeamUltroid/VcBot vcbot", shell=True
-                )
-            try:
-                if not os.path.exists("vcbot/downloads"):
-                    os.mkdir("vcbot/downloads")
-                Loader(path="vcbot", key="VCBot").load(after_load=_after_load)
-            except FileNotFoundError as e:
-                LOGS.error(f"{e} Skipping VCBot Installation.")
-        except ModuleNotFoundError:
-            LOGS.error("'pytgcalls' not installed!\nSkipping loading of VCBOT.")
