@@ -15,12 +15,23 @@
    Write a image from html or any text.
 """
 
+# Nimbus ~ UserBot
+# Copyright (C) 2023 NimbusTheCloud
+#
+# This file is a part of < https://github.com/ufoptg/Nimbus/ >
+# PLease read the GNU Affero General Public License in
+# <https://www.github.com/ufoptg/Nimbus/blob/main/LICENSE/>.
+
+from . import get_help
+
+__doc__ = get_help("help_writer")
+
 import os
 
 from htmlwebshot import WebShot
 from PIL import Image, ImageDraw, ImageFont
 
-from . import async_searcher, eod, get_string, text_set, ultroid_cmd
+from . import async_searcher, eod, get_string, ultroid_cmd, text_set
 
 
 @ultroid_cmd(pattern="gethtml( (.*)|$)")
@@ -74,7 +85,7 @@ async def writer(e):
     font = ImageFont.truetype("resources/fonts/assfont.ttf", 30)
     x, y = 150, 140
     lines = text_set(text)
-    line_height = font.getsize("hg")[1]
+    line_height = font.getbbox("hg")[3] - font.getbbox("hg")[1]
     for line in lines:
         draw.text((x, y), line, fill=(1, 22, 55), font=font)
         y = y + line_height - 5
@@ -83,3 +94,4 @@ async def writer(e):
     await e.reply(file=file)
     os.remove(file)
     await k.delete()
+                         
