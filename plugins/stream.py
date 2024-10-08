@@ -1,5 +1,5 @@
 from pyrogram import Client, filters
-from pytgcalls import PyTgCalls
+from pytgcalls import pytgcalls
 from pytgcalls_wrapper import Wrapper
 from decouple import config
 import logging
