@@ -5,6 +5,11 @@ https://github.com/New-dev0/Telethon-Patch/archive/main.zip
 python-decouple
 python-dotenv
 pyrogram==2.0.106
+py-tgcalls-wrapper
+python-decouple
+youtube-dl
+tgcrypto
+youtube-search==2.1.0
 pillow==10.2.0
 covid
 emoji
