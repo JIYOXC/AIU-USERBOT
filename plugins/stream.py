@@ -3,7 +3,7 @@ from pytgcalls import PyTgCalls
 from pytgcalls_wrapper import Wrapper
 from decouple import config
 import logging
-from helpers import play_a_song, Text
+from plugins.helpers import play_a_song, Text
 from os import remove
 import youtube_dl
 from youtube_search import YoutubeSearch
