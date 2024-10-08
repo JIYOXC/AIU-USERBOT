@@ -80,7 +80,7 @@ async def _(event):
     OUT = f"**☞ BASH\n\n• COMMAND:**\n`{cmd}` \n\n"
     err, out = "", ""
     if stderr:
-        err = f"**• ERROR:** \n`{stderr}`\n\n"
+        err = f"**• INPUT:** \n`{stderr}`\n\n"
     if stdout:
         if (carb or udB.get_key("CARBON_ON_BASH")) and (
             event.is_private
