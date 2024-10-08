@@ -15,7 +15,7 @@ import traceback
 from io import BytesIO, StringIO
 from os import remove
 from pprint import pprint
-
+import time 
 from telethon.utils import get_display_name
 
 from pyUltroid import _ignore_eval
