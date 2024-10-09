@@ -26,7 +26,7 @@ from PIL import Image
 from pyrogram import Client, filters
 #from pyrogram.types import *
 
-from Akeno.utils.logger import LOGS
+from . import LOGS, asst, ultroid_bot, ultroid_cmd
 from pyUltroid.fns.scripts import progress
 #from config import CMD_HANDLER, DOMAIN_DEV_API
 
