@@ -22,14 +22,13 @@ import time
 
 import requests
 from PIL import Image
-from pyrogram import *
+#from pyrogram import *
 from pyrogram import Client, filters
-from pyrogram.types import *
+#from pyrogram.types import *
 
-from Akeno.utils.handler import *
 from Akeno.utils.logger import LOGS
-from Akeno.utils.scripts import progress
-from config import CMD_HANDLER, DOMAIN_DEV_API
+from pyUltroid.fns.scripts import progress
+#from config import CMD_HANDLER, DOMAIN_DEV_API
 
 
 async def schellwithflux(args, is_working_dev=False):
