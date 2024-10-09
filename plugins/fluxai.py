@@ -33,7 +33,7 @@ from pyUltroid.fns.scripts import progress
 
 async def schellwithflux(args, is_working_dev=False):
     if is_working_dev:
-        API_URL = f"https://akeno.randydev.my.id}/api/v1/akeno/fluxai"
+        API_URL = f"https://akeno.randydev.my.id/api/v1/akeno/fluxai"
     else:
         API_URL = "https://randydev-ryuzaki-api.hf.space/api/v1/akeno/fluxai"
     payload = {
