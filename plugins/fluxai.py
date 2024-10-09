@@ -24,7 +24,7 @@ import requests
 from PIL import Image
 #from pyrogram import *
 from pyrogram import Client, filters
-#from pyrogram.types import *
+from pyrogram.types import Message
 
 from . import LOGS, asst, ultroid_bot, ultroid_cmd
 from pyUltroid.fns.scripts import progress
