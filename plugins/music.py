@@ -15,10 +15,8 @@ from pytgcalls import GroupCallFactory, GroupCallFileAction
 from youtubesearchpython import VideosSearch
 
 from Mix import Emojik, ReplyCheck, YoutubeDownload, cgr, get_cgr, ky, nlx
-from Mix.core.tools_music import *
+from pyUltroid.fns.tools_music import *
 
-__modles__ = "Music"
-__help__ = get_cgr("help_mus")
 
 gbr = "https://telegra.ph//file/b2a9611753657547acf15.jpg"
 
