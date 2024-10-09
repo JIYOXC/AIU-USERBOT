@@ -50,7 +50,7 @@ async def schellwithflux(args, is_working_dev=False):
 @ultroid_cmd(
     pattern="fluxai( (.*)|$)",
 )
-async def imgfluxai_(client: client, message: message):
+async def imgfluxai_(client: Client, message: message):
     question = message.text.split(" ", 1)[1] if len(message.command) > 1 else None
     if not question:
         return await message.reply_text("Please provide a question for Flux.")
