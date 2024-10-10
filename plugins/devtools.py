@@ -15,7 +15,7 @@ import traceback
 from io import BytesIO, StringIO
 from os import remove
 from pprint import pprint
-import time as tima
+import time
 from telethon.utils import get_display_name
 
 from pyUltroid import _ignore_eval
@@ -205,7 +205,7 @@ async def _(event):
     xx = None
     mode = ""
     spli = cmd.split()
-
+    
     async def get_():
         try:
             cm = cmd.split(maxsplit=1)[1]
@@ -253,13 +253,13 @@ async def _(event):
     redirected_output = sys.stdout = StringIO()
     redirected_error = sys.stderr = StringIO()
     stdout, stderr, exc, timeg = None, None, None, None
-    tima = time.time()
+    time.time()
     try:
         value = await aexec(cmd, event)
     except Exception:
         value = None
         exc = traceback.format_exc()
-    tima = time.time() - tima
+    time.time()
     stdout = redirected_output.getvalue()
     stderr = redirected_error.getvalue()
     sys.stdout = old_stdout
@@ -290,7 +290,7 @@ async def _(event):
                 )
             await event.client.send_message(log_chat, msg, parse_mode="html")
         return
-    tmt = tima * 1000
+    tmt = time * 1000
     timef = time_formatter(tmt)
     timeform = timef if not timef == "0s" else f"{tmt:.3f}ms"
     final_output = "__►__ **EVAL** (__in {}__)\n```{}``` \n\n __►__ **OUTPUT**: \n```{}``` \n".format(
