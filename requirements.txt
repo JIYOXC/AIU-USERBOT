@@ -30,3 +30,4 @@ speedtest-cli
 textblob
 wikipedia
 google_trans_new
+git+https://github.com/TeamKillerX/akenoai-lib.git
